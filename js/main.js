@@ -444,3 +444,14 @@ document.querySelectorAll('.reveal').forEach(r=> revealObs.observe(r));
 
 // Init
 setLanguage(currentLang);
+
+// Cert lightbox
+function openCertLightbox(){
+  document.getElementById('certLightbox').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeCertLightbox(){
+  document.getElementById('certLightbox').classList.remove('open');
+  document.body.style.overflow='';
+}
+document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCertLightbox(); });
