@@ -409,13 +409,20 @@
     <p class="sec-label reveal" data-i18n="cert.label">Formations continues</p>
     <h2 class="sec-title reveal" data-i18n-html="cert.title">Certifications <em>internationales</em></h2>
     <div class="cert-grid reveal">
-      <div class="cert-card">
-        <div class="cert-icon-wrap"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zm0 13l-10-5v5l10 5 10-5v-5l-10 5z"/></svg></div>
-        <div class="cert-body">
-          <p class="cert-issuer">HELP / Conseil de l'Europe</p>
-          <p class="cert-title" data-i18n="cert1.title">Asylum and Human Rights</p>
-          <p class="cert-meta" data-i18n="cert1.meta">Émis en octobre 2025</p>
-          <p class="cert-id">ID : XKCFxiKWyW</p>
+      <div class="cert-flip-wrap">
+        <div class="cert-flip-inner">
+          <div class="cert-card cert-flip-front">
+            <div class="cert-icon-wrap"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zm0 13l-10-5v5l10 5 10-5v-5l-10 5z"/></svg></div>
+            <div class="cert-body">
+              <p class="cert-issuer">HELP / Conseil de l'Europe</p>
+              <p class="cert-title" data-i18n="cert1.title">Asylum and Human Rights</p>
+              <p class="cert-meta" data-i18n="cert1.meta">Émis en octobre 2025</p>
+              <p class="cert-id">ID : XKCFxiKWyW</p>
+            </div>
+          </div>
+          <div class="cert-flip-back" onclick="openCertLightbox('images/HELP.jpg')">
+            <img src="images/HELP.jpg" alt="Certificat HELP — Conseil de l'Europe">
+          </div>
         </div>
       </div>
       <div class="cert-card">
@@ -452,7 +459,7 @@
               <p class="cert-meta" data-i18n="cert6.meta">31 mars — 2 avril 2026</p>
             </div>
           </div>
-          <div class="cert-flip-back" onclick="openCertLightbox()">
+          <div class="cert-flip-back" onclick="openCertLightbox('images/شهادة التقديرية.jpg')">
             <img src="images/شهادة التقديرية.jpg" alt="Certificat UNODC">
           </div>
         </div>
@@ -559,7 +566,7 @@
 
 <!-- Certificate lightbox -->
 <div id="certLightbox" class="cert-lightbox" onclick="closeCertLightbox()">
-  <img src="images/شهادة التقديرية.jpg" alt="Certificat UNODC">
+  <img id="certLightboxImg" src="" alt="Certificat">
   <button class="cert-lightbox-close" onclick="closeCertLightbox()" aria-label="Fermer">×</button>
 </div>
 

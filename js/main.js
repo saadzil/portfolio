@@ -446,7 +446,8 @@ document.querySelectorAll('.reveal').forEach(r=> revealObs.observe(r));
 setLanguage(currentLang);
 
 // Cert lightbox
-function openCertLightbox(){
+function openCertLightbox(src){
+  document.getElementById('certLightboxImg').src = src;
   document.getElementById('certLightbox').classList.add('open');
   document.body.style.overflow='hidden';
 }
