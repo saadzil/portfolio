@@ -274,6 +274,8 @@ body{font-family:var(--sans);background:var(--cream);color:var(--ink);line-heigh
 .cert-card::after{content:'';position:absolute;top:0;left:0;width:3px;height:100%;background:var(--gold)}
 [dir="rtl"] .cert-card::after{left:auto;right:0}
 .cert-card:hover{border-color:rgba(201,148,58,0.3);background:rgba(201,148,58,0.04)}
+a.cert-card{text-decoration:none;color:inherit;cursor:pointer}
+a.cert-card:hover{border-color:rgba(26,107,90,0.4);background:rgba(26,107,90,0.06)}
 .cert-icon-wrap{width:42px;height:42px;flex-shrink:0;background:rgba(201,148,58,0.1);border:1px solid rgba(201,148,58,0.2);border-radius:3px;display:flex;align-items:center;justify-content:center}
 .cert-icon-wrap svg{width:19px;height:19px;stroke:var(--gold);fill:none;stroke-width:1.5}
 .cert-issuer{font-family:var(--mono);font-size:0.6rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:0.35rem}
