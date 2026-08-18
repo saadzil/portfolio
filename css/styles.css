@@ -235,7 +235,7 @@ body{font-family:var(--sans);background:var(--cream);color:var(--ink);line-heigh
 .research-skills{margin-top:1.3rem;display:flex;flex-wrap:wrap;gap:0.35rem}
 .research-skill{font-size:0.63rem;letter-spacing:0.07em;text-transform:uppercase;border:1px solid rgba(26,107,90,0.3);color:rgba(42,143,117,0.7);padding:0.25rem 0.6rem;border-radius:2px}
 /* Research card with a square photo gallery beside the text */
-.research-card-media{display:grid;grid-template-columns:1fr 320px;gap:2.2rem;align-items:start}
+.research-card-media{display:grid;grid-template-columns:1fr 320px;gap:2.2rem;align-items:center}
 .research-square{width:100%;aspect-ratio:1/1;border-radius:3px;cursor:zoom-in}
 .research-square::after{display:none}
 .research-square .sem-nav{width:32px;height:32px}
