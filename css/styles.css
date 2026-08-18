@@ -234,6 +234,13 @@ body{font-family:var(--sans);background:var(--cream);color:var(--ink);line-heigh
 [dir="rtl"] .research-desc,[dir="rtl"] .research-type,[dir="rtl"] .research-period{text-align:right}
 .research-skills{margin-top:1.3rem;display:flex;flex-wrap:wrap;gap:0.35rem}
 .research-skill{font-size:0.63rem;letter-spacing:0.07em;text-transform:uppercase;border:1px solid rgba(26,107,90,0.3);color:rgba(42,143,117,0.7);padding:0.25rem 0.6rem;border-radius:2px}
+/* Research card with a square photo gallery beside the text */
+.research-card-media{display:grid;grid-template-columns:1fr 320px;gap:2.2rem;align-items:start}
+.research-square{width:100%;aspect-ratio:1/1;border-radius:3px;cursor:zoom-in}
+.research-square::after{display:none}
+.research-square .sem-nav{width:32px;height:32px}
+.research-square .sem-nav-prev{left:0.6rem}
+.research-square .sem-nav-next{right:0.6rem}
 
 /* ── PUBLICATIONS ── */
 .pub-list{display:flex;flex-direction:column;gap:1.4rem}
@@ -274,13 +281,13 @@ body{font-family:var(--sans);background:var(--cream);color:var(--ink);line-heigh
 .sem-feature-media{position:relative}
 .sem-cover-wide{width:1140px;max-width:100%;height:300px;aspect-ratio:auto;margin:0 auto;cursor:zoom-in}
 /* Cover slideshow: one slide visible at a time, cross-faded */
-.sem-cover-wide .sem-slide{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:0;transition:opacity 0.8s ease;transform:none}
-.sem-cover-wide .sem-slide.is-active{opacity:1}
+.slideshow .sem-slide{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:0;transition:opacity 0.8s ease;transform:none}
+.slideshow .sem-slide.is-active{opacity:1}
 /* Per-photo crop anchoring inside the 16:9 / strip frames */
-.sem-cover-wide .sem-slide.sem-crop-top{object-position:center 13.7%}
-.sem-cover-wide .sem-slide.sem-crop-bottom{object-position:center 67.6%}
-.sem-cover-wide:hover .sem-slide{transform:none}
-@media(prefers-reduced-motion:reduce){.sem-cover-wide .sem-slide{transition:none}}
+.slideshow .sem-slide.sem-crop-top{object-position:center 13.7%}
+.slideshow .sem-slide.sem-crop-bottom{object-position:center 67.6%}
+.slideshow:hover .sem-slide{transform:none}
+@media(prefers-reduced-motion:reduce){.slideshow .sem-slide{transition:none}}
 .sem-card-feature .sem-cover img{object-position:center 42%}
 .sem-cover{position:relative;overflow:hidden;cursor:pointer;background:var(--cream-mid)}
 .sem-cover img{width:100%;height:100%;object-fit:cover;object-position:center 22%;display:block;transition:transform 0.55s cubic-bezier(.4,0,.2,1)}
@@ -405,6 +412,8 @@ footer strong{color:var(--gold);font-weight:400}
   .hero-inner{padding:3rem 1.5rem 4rem}
   .sem-card-feature .sem-card-body{padding:1.6rem 1.2rem}
   .sem-cover-wide{height:auto;aspect-ratio:1140/300}
+  .research-card-media{grid-template-columns:1fr;gap:1.6rem}
+  .research-media{max-width:320px}
   .sem-grid{grid-template-columns:1fr}
   .sem-card-photo .sem-card-body{padding:1.6rem 1.2rem}
   .edu-item{grid-template-columns:1fr;gap:0.4rem}

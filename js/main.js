@@ -522,13 +522,20 @@ document.querySelectorAll('.sem-cover').forEach(c=>{
     if(body) body.style.padding = '';
   }
   // Slideshow covers: drop only the broken slide, collapse when none survive
-  document.querySelectorAll('.sem-cover-wide').forEach(cover=>{
+  document.querySelectorAll('.slideshow').forEach(cover=>{
     const card = cover.closest('.sem-card');
     cover.querySelectorAll('.sem-slide').forEach(img=>{
       const fail = function(){
         img.remove();
         const left = cover.querySelectorAll('.sem-slide');
-        if(!left.length){ drop(cover); collapse(card); return; }
+        if(!left.length){
+          drop(cover);
+          drop(cover.closest('.research-media'));
+          const row = cover.closest('.research-card-media');
+          if(row) row.classList.remove('research-card-media');
+          collapse(card);
+          return;
+        }
         if(!cover.querySelector('.sem-slide.is-active')) left[0].classList.add('is-active');
       };
       img.addEventListener('error', fail);
@@ -536,7 +543,7 @@ document.querySelectorAll('.sem-cover').forEach(c=>{
     });
   });
   // Single-photo covers
-  document.querySelectorAll('.sem-cover:not(.sem-cover-wide) img').forEach(img=>{
+  document.querySelectorAll('.sem-cover:not(.slideshow) img').forEach(img=>{
     const card = img.closest('.sem-card');
     const fail = function(){ drop(img.closest('.sem-cover')); collapse(card); };
     img.addEventListener('error', fail);
@@ -548,7 +555,7 @@ document.querySelectorAll('.sem-cover').forEach(c=>{
 (function(){
   const STEP = 5000;
   const still = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  document.querySelectorAll('.sem-cover-wide').forEach(cover=>{
+  document.querySelectorAll('.slideshow').forEach(cover=>{
     const show = function(n){
       const slides = cover.querySelectorAll('.sem-slide');
       if(!slides.length) return;
@@ -572,7 +579,7 @@ document.querySelectorAll('.sem-cover').forEach(c=>{
 // Arrow paging: move one photo and restart the countdown
 function semNav(e, btn, dir){
   e.stopPropagation();
-  const cover = btn.closest('.sem-cover-wide');
+  const cover = btn.closest('.slideshow');
   if(!cover || !cover.__show) return;
   cover.__show(cover.__i + dir);
   cover.__restart();
