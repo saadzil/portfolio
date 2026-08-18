@@ -267,11 +267,15 @@ body{font-family:var(--sans);background:var(--cream);color:var(--ink);line-heigh
 .sem-topics{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.9rem}
 .sem-topic{font-size:0.61rem;text-transform:uppercase;letter-spacing:0.07em;background:var(--cream);border:1px solid var(--cream-dark);color:var(--gray-text);padding:0.2rem 0.52rem;border-radius:2px}
 [dir="rtl"] .sem-title,[dir="rtl"] .sem-org,[dir="rtl"] .sem-desc{text-align:right}
-/* ── Featured seminar card with photo gallery ── */
-.sem-card-feature{grid-column:1/-1;padding:0;display:flex;flex-direction:column}
+/* ── Featured seminar entry: portrait photo column + text, full width ── */
+.sem-card-feature{grid-column:1/-1;display:grid;grid-template-columns:340px 1fr;gap:1.8rem;padding:1.8rem;align-items:start}
 .sem-card-feature::before{z-index:3}
-.sem-card-feature .sem-card-body{padding:2rem 1.6rem}
-.sem-card-feature .sem-cover{aspect-ratio:3/1}
+.sem-card-feature .sem-card-body{padding:0}
+.sem-feature-media{position:relative}
+.sem-cover-wide{aspect-ratio:16/9;border-radius:3px}
+.sem-card-feature .sem-thumbs{grid-template-columns:repeat(3,1fr);gap:0.45rem;padding:0.55rem 0 0}
+.sem-card-feature .sem-gallery{background:none;border-top:none}
+.sem-card-feature .sem-gallery.open{max-height:340px}
 .sem-cover{position:relative;overflow:hidden;cursor:pointer;background:var(--cream-mid)}
 .sem-cover img{width:100%;height:100%;object-fit:cover;object-position:center 22%;display:block;transition:transform 0.55s cubic-bezier(.4,0,.2,1)}
 .sem-cover:hover img{transform:scale(1.035)}
@@ -395,11 +399,12 @@ footer strong{color:var(--gold);font-weight:400}
   .hero-right{display:none}
   .hero-watermark{display:none}
   .hero-inner{padding:3rem 1.5rem 4rem}
-  .sem-card-feature .sem-cover{aspect-ratio:16/9}
+  .sem-card-feature{grid-template-columns:1fr;gap:1.3rem;padding:1.4rem}
+  .sem-feature-media{max-width:none;width:100%}
   .sem-grid{grid-template-columns:1fr}
   .sem-thumbs{grid-template-columns:repeat(3,1fr);gap:0.45rem;padding:0.8rem 1.2rem 1rem}
   .sem-gallery.open{max-height:560px}
-  .sem-card-feature .sem-card-body,.sem-card-photo .sem-card-body{padding:1.6rem 1.2rem}
+  .sem-card-photo .sem-card-body{padding:1.6rem 1.2rem}
   .edu-item{grid-template-columns:1fr;gap:0.4rem}
   [dir="rtl"] .edu-item{grid-template-columns:1fr}
   .hero-right{display:flex}

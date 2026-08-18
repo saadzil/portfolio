@@ -504,6 +504,7 @@ document.querySelectorAll('.sem-cover').forEach(c=>{
       drop(img.closest('.sem-cover'));
       if(!card) return;
       drop(card.querySelector('.sem-gallery'));
+      drop(card.querySelector('.sem-feature-media'));
       card.classList.remove('sem-card-feature','sem-card-photo');
       const body = card.querySelector('.sem-card-body');
       if(body) body.style.padding = '';
