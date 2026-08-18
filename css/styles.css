@@ -278,7 +278,7 @@ body{font-family:var(--sans);background:var(--cream);color:var(--ink);line-heigh
 .sem-cover-wide .sem-slide.is-active{opacity:1}
 /* Per-photo crop anchoring inside the 16:9 / strip frames */
 .sem-cover-wide .sem-slide.sem-crop-top,.sem-thumb img.sem-crop-top{object-position:center 10%}
-.sem-cover-wide .sem-slide.sem-crop-bottom,.sem-thumb img.sem-crop-bottom{object-position:center 83%}
+.sem-cover-wide .sem-slide.sem-crop-bottom,.sem-thumb img.sem-crop-bottom{object-position:center 57%}
 .sem-cover-wide:hover .sem-slide{transform:none}
 @media(prefers-reduced-motion:reduce){.sem-cover-wide .sem-slide{transition:none}}
 .sem-card-feature .sem-cover img{object-position:center 42%}
