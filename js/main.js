@@ -521,7 +521,7 @@ document.querySelectorAll('.sem-cover').forEach(c=>{
     const body = card.querySelector('.sem-card-body');
     if(body) body.style.padding = '';
   }
-  // Slideshow covers: drop only the broken slide, collapse when none survive
+  // Slideshows: drop only the broken slide, collapse when none survive
   document.querySelectorAll('.slideshow').forEach(cover=>{
     const card = cover.closest('.sem-card');
     cover.querySelectorAll('.sem-slide').forEach(img=>{
@@ -539,7 +539,8 @@ document.querySelectorAll('.sem-cover').forEach(c=>{
         if(!cover.querySelector('.sem-slide.is-active')) left[0].classList.add('is-active');
       };
       img.addEventListener('error', fail);
-      if(img.complete && img.naturalWidth === 0) fail();
+      // Only judge slides that have actually been asked to load
+      if(img.getAttribute('src') && img.complete && img.naturalWidth === 0) fail();
     });
   });
   // Single-photo covers
@@ -551,10 +552,15 @@ document.querySelectorAll('.sem-cover').forEach(c=>{
   });
 })();
 
-// Cover slideshow: auto-advance every 5 seconds, with arrows for manual paging
+// Slideshows: auto-advance every 5s, arrows for manual paging, slides fetched on demand
 (function(){
   const STEP = 5000;
   const still = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function load(img){
+    if(!img) return;
+    const src = img.getAttribute('data-src');
+    if(src){ img.removeAttribute('data-src'); img.src = src; }
+  }
   document.querySelectorAll('.slideshow').forEach(cover=>{
     const show = function(n){
       const slides = cover.querySelectorAll('.sem-slide');
@@ -562,6 +568,8 @@ document.querySelectorAll('.sem-cover').forEach(c=>{
       const current = cover.querySelector('.sem-slide.is-active');
       if(current) current.classList.remove('is-active');
       cover.__i = (n % slides.length + slides.length) % slides.length;
+      load(slides[cover.__i]);
+      load(slides[(cover.__i + 1) % slides.length]);
       slides[cover.__i].classList.add('is-active');
     };
     const restart = function(){
@@ -572,6 +580,7 @@ document.querySelectorAll('.sem-cover').forEach(c=>{
     cover.__i = 0;
     cover.__show = show;
     cover.__restart = restart;
+    show(0);
     restart();
   });
 })();
