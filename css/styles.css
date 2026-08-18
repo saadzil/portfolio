@@ -287,6 +287,12 @@ body{font-family:var(--sans);background:var(--cream);color:var(--ink);line-heigh
 .sem-thumb:hover img{transform:scale(1.07);opacity:0.82}
 .sem-thumb::after{content:'';position:absolute;inset:0;border:0 solid var(--teal);transition:border-width 0.18s}
 .sem-thumb:hover::after{border-width:2px}
+/* Seminar card led by a single photo */
+.sem-card-photo{padding:0;display:flex;flex-direction:column}
+.sem-card-photo::before{z-index:3}
+.sem-card-photo .sem-card-body{padding:2rem 1.6rem;flex:1}
+.sem-card-photo .sem-cover{height:195px}
+.sem-cover-single{cursor:zoom-in}
 
 /* ── CERTS ── */
 .cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:1.1rem}
@@ -392,7 +398,7 @@ footer strong{color:var(--gold);font-weight:400}
   .sem-cover{height:210px}
   .sem-thumbs{grid-template-columns:repeat(3,1fr);gap:0.45rem;padding:0.8rem 1.2rem 1rem}
   .sem-gallery.open{max-height:560px}
-  .sem-card-feature .sem-card-body{padding:1.6rem 1.2rem}
+  .sem-card-feature .sem-card-body,.sem-card-photo .sem-card-body{padding:1.6rem 1.2rem}
   .edu-item{grid-template-columns:1fr;gap:0.4rem}
   [dir="rtl"] .edu-item{grid-template-columns:1fr}
   .hero-right{display:flex}

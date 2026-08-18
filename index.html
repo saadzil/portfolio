@@ -356,15 +356,6 @@
   <div class="sec">
     <p class="sec-label reveal" data-i18n="sem.label">Engagement académique</p>
     <h2 class="sec-title reveal" data-i18n-html="sem.title">Séminaires & <em>Conférences</em></h2>
-    <!-- ★ PHOTO 5 — photo-seminaire.jpg -->
-    <div class="sem-banner reveal">
-      <img src="images/photo-seminar.jpg" alt="Séminaire" style="width:100%;height:100%;object-fit:cover;display:block" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-      <div class="photo-placeholder" style="display:none;position:absolute;inset:0;background:var(--white)">
-        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-        <div class="photo-placeholder-label" data-i18n="photo.sem">Photo séminaire / événement académique — format paysage</div>
-        <div class="photo-placeholder-file">→ photo-seminaire.jpg</div>
-      </div>
-    </div>
     <div class="sem-grid">
       <!-- ★ Featured — Protection internationale des droits de l'enfant (CRMEF) -->
       <div class="sem-card sem-card-feature reveal">
@@ -397,15 +388,24 @@
           </div>
         </div>
       </div>
-      <div class="sem-card reveal">
-        <span class="sem-role-badge" data-i18n="sem1.role">Coordinateur</span>
-        <h3 class="sem-title" data-i18n="sem1.title">Séminaire sur les Droits de l'Homme et la Démocratie</h3>
-        <p class="sem-org" data-i18n="sem.org">Université Abdelmalek Essaâdi · Tanger</p>
-        <p class="sem-desc" data-i18n="sem1.desc">Organisation et mise en œuvre d'un séminaire visant à approfondir la compréhension des participants sur les principes des droits humains et le fonctionnement démocratique.</p>
-        <div class="sem-topics">
-          <span class="sem-topic" data-i18n="stop.1">Droits de l'Homme</span>
-          <span class="sem-topic" data-i18n="stop.2">Démocratie</span>
-          <span class="sem-topic" data-i18n="stop.3">État de droit</span>
+      <div class="sem-card sem-card-photo reveal">
+        <div class="sem-cover sem-cover-single" role="button" tabindex="0" onclick="openCertLightbox('images/photo-seminar.jpg')">
+          <img src="images/photo-seminar.jpg" alt="Séminaire sur les Droits de l'Homme et la Démocratie — Université Abdelmalek Essaâdi, Tanger">
+          <span class="sem-cover-hint">
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg>
+            <span data-i18n="sem.photo">Agrandir la photo</span>
+          </span>
+        </div>
+        <div class="sem-card-body">
+          <span class="sem-role-badge" data-i18n="sem1.role">Coordinateur</span>
+          <h3 class="sem-title" data-i18n="sem1.title">Séminaire sur les Droits de l'Homme et la Démocratie</h3>
+          <p class="sem-org" data-i18n="sem.org">Université Abdelmalek Essaâdi · Tanger</p>
+          <p class="sem-desc" data-i18n="sem1.desc">Organisation et mise en œuvre d'un séminaire visant à approfondir la compréhension des participants sur les principes des droits humains et le fonctionnement démocratique.</p>
+          <div class="sem-topics">
+            <span class="sem-topic" data-i18n="stop.1">Droits de l'Homme</span>
+            <span class="sem-topic" data-i18n="stop.2">Démocratie</span>
+            <span class="sem-topic" data-i18n="stop.3">État de droit</span>
+          </div>
         </div>
       </div>
       <div class="sem-card reveal">
