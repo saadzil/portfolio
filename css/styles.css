@@ -276,6 +276,9 @@ body{font-family:var(--sans);background:var(--cream);color:var(--ink);line-heigh
 /* Cover slideshow: one slide visible at a time, cross-faded */
 .sem-cover-wide .sem-slide{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:0;transition:opacity 0.8s ease;transform:none}
 .sem-cover-wide .sem-slide.is-active{opacity:1}
+/* Per-photo crop anchoring inside the 16:9 / strip frames */
+.sem-cover-wide .sem-slide.sem-crop-top,.sem-thumb img.sem-crop-top{object-position:center 10%}
+.sem-cover-wide .sem-slide.sem-crop-bottom,.sem-thumb img.sem-crop-bottom{object-position:center 83%}
 .sem-cover-wide:hover .sem-slide{transform:none}
 @media(prefers-reduced-motion:reduce){.sem-cover-wide .sem-slide{transition:none}}
 .sem-card-feature .sem-cover img{object-position:center 42%}
@@ -405,6 +408,7 @@ footer strong{color:var(--gold);font-weight:400}
   .hero-watermark{display:none}
   .hero-inner{padding:3rem 1.5rem 4rem}
   .sem-card-feature .sem-card-body{padding:1.6rem 1.2rem}
+  .sem-cover-wide{height:auto;aspect-ratio:950/300}
   .sem-grid{grid-template-columns:1fr}
   .sem-thumbs{grid-template-columns:repeat(3,1fr);gap:0.45rem;padding:0.8rem 1.2rem 1rem}
   .sem-gallery.open{max-height:560px}
