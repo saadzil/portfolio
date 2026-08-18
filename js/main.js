@@ -88,12 +88,6 @@ fr:{
   "stop.1":"Droits de l'Homme","stop.2":"Démocratie","stop.3":"État de droit",
   "stop.4":"Coexistence","stop.5":"Tolérance","stop.6":"Dialogue",
   "stop.7":"DIH","stop.8":"Plaidoyer","stop.9":"Accès à la justice",
-  "sem.gallery":"5 photos — cliquer pour voir","sem.photo":"Agrandir la photo",
-  "sem4.role":"Formateur et intervenant","sem4.title":"Protection internationale des droits de l'enfant",
-  "sem4.org":"CRMEF Béni Mellal–Khénifra · Azilal & Khénifra",
-  "sem4.desc":"Animation de deux rencontres scientifiques et formatives consacrées à la <strong>protection internationale des droits de l'enfant</strong>, organisées par le Centre Régional des Métiers de l'Éducation et de la Formation de Béni Mellal–Khénifra, à Azilal et Khénifra. La rencontre d'Azilal était destinée aux <strong>enseignantes et enseignants</strong>, celle de Khénifra aux <strong>directrices et directeurs d'établissements scolaires</strong>. Les échanges ont porté sur la Convention relative aux droits de l'enfant, le principe de l'intérêt supérieur de l'enfant et le rôle de l'institution éducative dans la prévention, la protection et la promotion des droits de l'enfant en milieu scolaire.",
-  "stop.10":"Droits de l'enfant","stop.11":"Intérêt supérieur de l'enfant",
-  "stop.12":"Protection en milieu scolaire","stop.13":"Formation des cadres éducatifs",
   "cert.label":"Formations continues","cert.title":"Certifications <em>internationales</em>",
   "cert1.title":"Asylum and Human Rights","cert1.meta":"Émis en octobre 2025",
   "cert2.title":"UNHCR Best Interests Procedure — Refugee and Asylum-Seeking Children at Risk",
@@ -210,12 +204,6 @@ en:{
   "stop.1":"Human Rights","stop.2":"Democracy","stop.3":"Rule of Law",
   "stop.4":"Coexistence","stop.5":"Tolerance","stop.6":"Dialogue",
   "stop.7":"IHL","stop.8":"Advocacy","stop.9":"Access to Justice",
-  "sem.gallery":"5 photos — click to view","sem.photo":"Enlarge photo",
-  "sem4.role":"Trainer and Speaker","sem4.title":"International Protection of Children's Rights",
-  "sem4.org":"CRMEF Béni Mellal–Khénifra · Azilal & Khénifra",
-  "sem4.desc":"Two scientific and training sessions on the <strong>international protection of children's rights</strong>, organised by the Regional Center for Education and Training Professions of Béni Mellal–Khénifra, in Azilal and Khénifra. The Azilal session was designed for <strong>teachers</strong>, while the Khénifra session targeted <strong>school principals and educational administrators</strong>. Discussions focused on the Convention on the Rights of the Child, the best interests of the child principle, and the role of educational institutions in preventing harm, protecting children and promoting their rights within the school environment.",
-  "stop.10":"Children's Rights","stop.11":"Best Interests of the Child",
-  "stop.12":"Protection in Schools","stop.13":"Training of Educational Staff",
   "cert.label":"Continuing Education","cert.title":"International <em>Certifications</em>",
   "cert1.title":"Asylum and Human Rights","cert1.meta":"Issued October 2025",
   "cert2.title":"UNHCR Best Interests Procedure — Refugee and Asylum-Seeking Children at Risk",
@@ -332,12 +320,6 @@ ar:{
   "stop.1":"حقوق الإنسان","stop.2":"الديمقراطية","stop.3":"سيادة القانون",
   "stop.4":"التعايش","stop.5":"التسامح","stop.6":"الحوار",
   "stop.7":"القانون الإنساني الدولي","stop.8":"المناصرة","stop.9":"النفاذ إلى العدالة",
-  "sem.gallery":"5 صور · اضغط للعرض","sem.photo":"تكبير الصورة",
-  "sem4.role":"مؤطر ومتدخل","sem4.title":"الحماية الدولية لحقوق الطفل",
-  "sem4.org":"المركز الجهوي لمهن التربية والتكوين · بني ملال–خنيفرة · أزيلال وخنيفرة",
-  "sem4.desc":"تأطير لقاءين علميين وتكوينيين حول <strong>الحماية الدولية لحقوق الطفل</strong>، نظمهما المركز الجهوي لمهن التربية والتكوين لجهة بني ملال–خنيفرة بكل من أزيلال وخنيفرة. خُصص لقاء أزيلال لفائدة <strong>الأستاذات والأساتذة</strong>، بينما وُجه لقاء خنيفرة إلى <strong>مديرات ومديري المؤسسات التعليمية</strong>. وتم خلالهما تناول اتفاقية حقوق الطفل، ومبدأ المصلحة الفضلى للطفل، ودور المؤسسة التعليمية في الوقاية والحماية وتعزيز حقوق الطفل داخل الوسط المدرسي، بما يسهم في تعزيز الوعي بالمعايير الدولية لحماية حقوق الطفل وربطها بالممارسة التربوية والمؤسساتية.",
-  "stop.10":"حقوق الطفل","stop.11":"المصلحة الفضلى للطفل",
-  "stop.12":"الحماية بالوسط المدرسي","stop.13":"تكوين الأطر التربوية",
   "cert.label":"التكوين المستمر","cert.title":"الشهادات <em>الدولية</em>",
   "cert1.title":"اللجوء وحقوق الإنسان","cert1.meta":"أُصدرت في أكتوبر 2025",
   "cert2.title":"إجراءات تقدير المصلحة الفضلى للأطفال اللاجئين وطالبي اللجوء في وضعيات الخطر — UNHCR",
@@ -474,42 +456,3 @@ function closeCertLightbox(){
   document.body.style.overflow='';
 }
 document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCertLightbox(); });
-// Seminar photo gallery (featured card)
-function toggleSemGallery(el){
-  const g = el.parentElement.querySelector('.sem-gallery');
-  if(!g) return;
-  const open = g.classList.toggle('open');
-  el.setAttribute('aria-expanded', open ? 'true' : 'false');
-}
-document.querySelectorAll('.sem-cover').forEach(c=>{
-  c.addEventListener('keydown', function(e){
-    if(e.key !== 'Enter' && e.key !== ' ') return;
-    e.preventDefault();
-    if(c.parentElement.querySelector('.sem-gallery')) toggleSemGallery(c);
-    else c.click();
-  });
-});
-
-// Seminar photos: degrade gracefully if the image files are absent
-(function(){
-  function drop(el){ if(el) el.style.display = 'none'; }
-  document.querySelectorAll('.sem-thumb img').forEach(img=>{
-    const fail = ()=> drop(img.closest('.sem-thumb'));
-    img.addEventListener('error', fail);
-    if(img.complete && img.naturalWidth === 0) fail();
-  });
-  document.querySelectorAll('.sem-cover img').forEach(img=>{
-    const card = img.closest('.sem-card');
-    const fail = function(){
-      drop(img.closest('.sem-cover'));
-      if(!card) return;
-      drop(card.querySelector('.sem-gallery'));
-      drop(card.querySelector('.sem-feature-media'));
-      card.classList.remove('sem-card-feature','sem-card-photo');
-      const body = card.querySelector('.sem-card-body');
-      if(body) body.style.padding = '';
-    };
-    img.addEventListener('error', fail);
-    if(img.complete && img.naturalWidth === 0) fail();
-  });
-})();
