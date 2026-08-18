@@ -88,7 +88,7 @@ fr:{
   "stop.1":"Droits de l'Homme","stop.2":"Démocratie","stop.3":"État de droit",
   "stop.4":"Coexistence","stop.5":"Tolérance","stop.6":"Dialogue",
   "stop.7":"DIH","stop.8":"Plaidoyer","stop.9":"Accès à la justice",
-  "sem.gallery":"4 photos — cliquer pour voir","sem.photo":"Agrandir la photo",
+  "sem.gallery":"Cliquer pour agrandir","sem.photo":"Agrandir la photo",
   "sem4.role":"Formateur et intervenant","sem4.title":"Protection internationale des droits de l'enfant",
   "sem4.org":"CRMEF Béni Mellal–Khénifra · Azilal & Khénifra",
   "sem4.desc":"Animation de deux rencontres scientifiques et formatives consacrées à la <strong>protection internationale des droits de l'enfant</strong>, organisées par le Centre Régional des Métiers de l'Éducation et de la Formation de Béni Mellal–Khénifra, à Azilal et Khénifra. La rencontre d'Azilal était destinée aux <strong>enseignantes et enseignants</strong>, celle de Khénifra aux <strong>directrices et directeurs d'établissements scolaires</strong>. Les échanges ont porté sur la Convention relative aux droits de l'enfant, le principe de l'intérêt supérieur de l'enfant et le rôle de l'institution éducative dans la prévention, la protection et la promotion des droits de l'enfant en milieu scolaire.",
@@ -210,7 +210,7 @@ en:{
   "stop.1":"Human Rights","stop.2":"Democracy","stop.3":"Rule of Law",
   "stop.4":"Coexistence","stop.5":"Tolerance","stop.6":"Dialogue",
   "stop.7":"IHL","stop.8":"Advocacy","stop.9":"Access to Justice",
-  "sem.gallery":"4 photos — click to view","sem.photo":"Enlarge photo",
+  "sem.gallery":"Click to enlarge","sem.photo":"Enlarge photo",
   "sem4.role":"Trainer and Speaker","sem4.title":"International Protection of Children's Rights",
   "sem4.org":"CRMEF Béni Mellal–Khénifra · Azilal & Khénifra",
   "sem4.desc":"Two scientific and training sessions on the <strong>international protection of children's rights</strong>, organised by the Regional Center for Education and Training Professions of Béni Mellal–Khénifra, in Azilal and Khénifra. The Azilal session was designed for <strong>teachers</strong>, while the Khénifra session targeted <strong>school principals and educational administrators</strong>. Discussions focused on the Convention on the Rights of the Child, the best interests of the child principle, and the role of educational institutions in preventing harm, protecting children and promoting their rights within the school environment.",
@@ -332,7 +332,7 @@ ar:{
   "stop.1":"حقوق الإنسان","stop.2":"الديمقراطية","stop.3":"سيادة القانون",
   "stop.4":"التعايش","stop.5":"التسامح","stop.6":"الحوار",
   "stop.7":"القانون الإنساني الدولي","stop.8":"المناصرة","stop.9":"النفاذ إلى العدالة",
-  "sem.gallery":"4 صور · اضغط للعرض","sem.photo":"تكبير الصورة",
+  "sem.gallery":"اضغط لعرض الصورة كاملة","sem.photo":"تكبير الصورة",
   "sem4.role":"مؤطر ومتدخل","sem4.title":"الحماية الدولية لحقوق الطفل",
   "sem4.org":"المركز الجهوي لمهن التربية والتكوين · بني ملال–خنيفرة · أزيلال وخنيفرة",
   "sem4.desc":"تأطير لقاءين علميين وتكوينيين حول <strong>الحماية الدولية لحقوق الطفل</strong>، نظمهما المركز الجهوي لمهن التربية والتكوين لجهة بني ملال–خنيفرة بكل من أزيلال وخنيفرة. خُصص لقاء أزيلال لفائدة <strong>الأستاذات والأساتذة</strong>، بينما وُجه لقاء خنيفرة إلى <strong>مديرات ومديري المؤسسات التعليمية</strong>. وتم خلالهما تناول اتفاقية حقوق الطفل، ومبدأ المصلحة الفضلى للطفل، ودور المؤسسة التعليمية في الوقاية والحماية وتعزيز حقوق الطفل داخل الوسط المدرسي، بما يسهم في تعزيز الوعي بالمعايير الدولية لحماية حقوق الطفل وربطها بالممارسة التربوية والمؤسساتية.",
@@ -474,19 +474,16 @@ function closeCertLightbox(){
   document.body.style.overflow='';
 }
 document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeCertLightbox(); });
-// Seminar photo gallery (featured card)
-function toggleSemGallery(el){
-  const g = el.parentElement.querySelector('.sem-gallery');
-  if(!g) return;
-  const open = g.classList.toggle('open');
-  el.setAttribute('aria-expanded', open ? 'true' : 'false');
+// Featured seminar cover: open the slide currently on screen, full size
+function openCurrentSlide(el){
+  const active = el.querySelector('.sem-slide.is-active') || el.querySelector('.sem-slide');
+  if(active) openCertLightbox(active.getAttribute('src'));
 }
 document.querySelectorAll('.sem-cover').forEach(c=>{
   c.addEventListener('keydown', function(e){
     if(e.key !== 'Enter' && e.key !== ' ') return;
     e.preventDefault();
-    if(c.parentElement.querySelector('.sem-gallery')) toggleSemGallery(c);
-    else c.click();
+    c.click();
   });
 });
 
