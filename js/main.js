@@ -492,17 +492,11 @@ document.querySelectorAll('.sem-cover').forEach(c=>{
   function drop(el){ if(el) el.style.display = 'none'; }
   function collapse(card){
     if(!card) return;
-    drop(card.querySelector('.sem-gallery'));
     drop(card.querySelector('.sem-feature-media'));
     card.classList.remove('sem-card-feature','sem-card-photo');
     const body = card.querySelector('.sem-card-body');
     if(body) body.style.padding = '';
   }
-  document.querySelectorAll('.sem-thumb img').forEach(img=>{
-    const fail = ()=> drop(img.closest('.sem-thumb'));
-    img.addEventListener('error', fail);
-    if(img.complete && img.naturalWidth === 0) fail();
-  });
   // Slideshow covers: drop only the broken slide, collapse when none survive
   document.querySelectorAll('.sem-cover-wide').forEach(cover=>{
     const card = cover.closest('.sem-card');
@@ -526,17 +520,36 @@ document.querySelectorAll('.sem-cover').forEach(c=>{
   });
 })();
 
-// Cover slideshow: advance every 5 seconds
+// Cover slideshow: auto-advance every 5 seconds, with arrows for manual paging
 (function(){
   const STEP = 5000;
+  const still = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   document.querySelectorAll('.sem-cover-wide').forEach(cover=>{
-    let i = 0;
-    setInterval(function(){
+    const show = function(n){
       const slides = cover.querySelectorAll('.sem-slide');
-      if(slides.length < 2) return;
-      slides[i % slides.length].classList.remove('is-active');
-      i = (i + 1) % slides.length;
-      slides[i].classList.add('is-active');
-    }, STEP);
+      if(!slides.length) return;
+      const current = cover.querySelector('.sem-slide.is-active');
+      if(current) current.classList.remove('is-active');
+      cover.__i = (n % slides.length + slides.length) % slides.length;
+      slides[cover.__i].classList.add('is-active');
+    };
+    const restart = function(){
+      clearInterval(cover.__timer);
+      if(still) return;
+      cover.__timer = setInterval(()=> show(cover.__i + 1), STEP);
+    };
+    cover.__i = 0;
+    cover.__show = show;
+    cover.__restart = restart;
+    restart();
   });
 })();
+
+// Arrow paging: move one photo and restart the countdown
+function semNav(e, btn, dir){
+  e.stopPropagation();
+  const cover = btn.closest('.sem-cover-wide');
+  if(!cover || !cover.__show) return;
+  cover.__show(cover.__i + dir);
+  cover.__restart();
+}
