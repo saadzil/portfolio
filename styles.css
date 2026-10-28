@@ -549,3 +549,40 @@ footer strong{color:var(--gold);font-weight:400}
   .sem-gallery-prev{left:1rem}.sem-gallery-next{right:1rem}
 }
 .sem-count,.sem-gallery-count{direction:ltr;unicode-bidi:isolate}
+
+/* ════ PUBLICATIONS — Books group (distinct from journal articles) ════ */
+.pub-group{display:flex;align-items:center;gap:1rem;font-family:var(--mono);font-size:0.66rem;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--gray-light);margin:0 0 1.1rem}
+.pub-group::after{content:'';flex:1;height:1px;background:var(--cream-dark)}
+.book-item + .pub-group,.pub-group ~ .pub-group{margin-top:2.8rem}
+.book-item{position:relative;background:var(--white);border:1px solid var(--cream-dark);border-inline-start:3px solid var(--gold);border-radius:3px;padding:2.2rem 2.4rem 2rem;transition:box-shadow 0.25s}
+.book-item:hover{box-shadow:0 8px 30px rgba(10,22,40,0.06)}
+.book-head{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin-bottom:0.9rem}
+.book-type{font-family:var(--mono);font-size:0.62rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--teal)}
+.book-status{display:inline-flex;align-items:center;gap:0.45rem;font-size:0.62rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);border:1px solid rgba(201,148,58,0.35);padding:0.26rem 0.7rem;border-radius:2px}
+.book-status::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--gold)}
+.book-status.done{color:var(--teal);border-color:rgba(26,107,90,0.3)}
+.book-status.done::before{background:var(--teal)}
+.book-title{font-family:var(--serif);font-size:1.55rem;font-weight:400;line-height:1.32;color:var(--ink);margin-bottom:0.5rem;max-width:46rem}
+.book-alt{font-family:var(--sans-ar);font-size:0.98rem;line-height:1.6;color:var(--gray-text);margin-bottom:1.4rem;text-align:right}
+[dir="rtl"] .book-alt{font-family:var(--serif);font-style:italic;text-align:right}
+.book-authors{display:flex;align-items:baseline;gap:1.2rem;flex-wrap:wrap;padding:0.95rem 0;border-top:1px solid var(--cream-dark);border-bottom:1px solid var(--cream-dark);margin-bottom:1.2rem}
+.book-authors-label{font-family:var(--mono);font-size:0.6rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gray-light)}
+.book-author-list{display:flex;flex-wrap:wrap;list-style:none;margin:0;padding:0}
+.book-author-list li{font-size:0.93rem;font-weight:500;color:var(--ink);padding:0 1.1rem;border-inline-start:1px solid var(--cream-dark)}
+.book-author-list li:first-child{padding-inline-start:0;border-inline-start:0}
+.book-desc{font-size:0.9rem;line-height:1.75;color:var(--gray-text);max-width:50rem}
+.book-topics{margin-top:1.1rem}
+.book-meta{display:flex;flex-wrap:wrap;gap:0.4rem 2rem;margin-top:1.2rem;font-size:0.82rem}
+.book-meta[hidden],.book-meta [hidden]{display:none}
+.book-meta dt{font-family:var(--mono);font-size:0.58rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-light)}
+.book-meta dd{margin:0.15rem 0 0;color:var(--ink)}
+.book-pending{margin-top:1.2rem;font-size:0.76rem;font-style:italic;color:var(--gray-light)}
+[dir="rtl"] .book-pending{font-style:normal}
+[dir="rtl"] .book-title{font-family:var(--sans-ar);font-weight:500;line-height:1.55}
+@media(max-width:760px){
+  .book-item{padding:1.6rem 1.3rem 1.5rem}
+  .book-title{font-size:1.25rem}
+  .book-authors{flex-direction:column;gap:0.5rem}
+  .book-author-list{flex-direction:column;gap:0.25rem}
+  .book-author-list li{padding:0;border:0}
+}
