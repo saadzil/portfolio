@@ -104,7 +104,7 @@ fr:{
   "stop.12":"Protection en milieu scolaire","stop.13":"Formation des cadres éducatifs",
   "sem5.role":"Panéliste et présentateur de recherche",
   "sem5.title":"LCOY Morocco 2026 — Conférence Locale de la Jeunesse sur le Changement Climatique",
-  "sem5.org":"LCOY Morocco · Guelmim, Maroc · Octobre 2026",
+  "sem5.org":"LCOY Morocco · Guelmim, Maroc",
   "sem5.desc1":"Participation en tant que <strong>panéliste</strong> à LCOY Morocco 2026, une conférence climatique de la jeunesse réunissant chercheurs, défenseurs de l'environnement et jeunes acteurs du changement autour des défis climatiques et du développement durable. Présentation de ma recherche intitulée <strong>« La jeunesse marocaine face à la désertification : protéger les oasis et réduire les déplacements »</strong>, qui examine les pressions environnementales pesant sur les écosystèmes oasiens du Maroc, le lien entre désertification et déplacement des populations, et le rôle des jeunes dans le renforcement de la résilience climatique locale.",
   "sem5.desc2":"La conférence a également permis de découvrir des initiatives environnementales portées par les communautés, notamment le travail de l'<strong>Association Aïcha à Oumifiss</strong>, dont le fondateur, M. Mustapha, mène un projet ambitieux visant à planter <strong>un million d'arbres</strong>. Les échanges avec des acteurs locaux, dont <strong>Dar Si Hmad à Sidi Ifni</strong>, ont souligné l'importance de l'action environnementale de terrain et de la participation communautaire.",
   "sem5.desc3":"Cette expérience a renforcé le lien entre mes recherches académiques sur les déplacements environnementaux et la justice climatique, et les approches concrètes de protection de l'environnement et d'adaptation au changement climatique.",
@@ -114,6 +114,14 @@ fr:{
   "stop.17":"Déplacements environnementaux",
   "stop.18":"Engagement des jeunes",
   "stop.19":"Résilience communautaire",
+  "sem4.when":"Juin 2026",
+  "sem4.where":"Azilal & Khénifra",
+  "sem4.short":"Deux rencontres de formation sur la protection internationale des droits de l'enfant, animées pour les enseignants à Azilal et les directeurs d'établissements à Khénifra.",
+  "sem5.when":"Octobre 2026",
+  "sem5.where":"Guelmim, Maroc",
+  "sem5.short":"Présentation de ma recherche « La jeunesse marocaine face à la désertification : protéger les oasis et réduire les déplacements » lors d'un panel sur la résilience climatique.",
+  "sem.more":"Voir les détails",
+  "sem.gallery.title":"Galerie photos",
   "cert.label":"Formations continues","cert.title":"Certifications <em>internationales</em>",
   "cert1.title":"Asylum and Human Rights","cert1.meta":"Émis en octobre 2025",
   "cert2.title":"UNHCR Best Interests Procedure — Refugee and Asylum-Seeking Children at Risk",
@@ -247,7 +255,7 @@ en:{
   "stop.12":"Protection in Schools","stop.13":"Training of Educational Staff",
   "sem5.role":"Panelist & Research Presenter",
   "sem5.title":"LCOY Morocco 2026 — Local Conference of Youth on Climate Change",
-  "sem5.org":"LCOY Morocco · Guelmim, Morocco · October 2026",
+  "sem5.org":"LCOY Morocco · Guelmim, Morocco",
   "sem5.desc1":"Participated as a <strong>panelist</strong> at LCOY Morocco 2026, a youth climate conference bringing together researchers, environmental advocates, and young changemakers to discuss climate challenges and sustainable development. Presented my research entitled <strong>“Moroccan Youth in the Face of Desertification: Protecting Oases and Reducing Displacement,”</strong> examining environmental pressures affecting Morocco's oasis ecosystems, the relationship between desertification and population displacement, and the role of youth in strengthening local climate resilience.",
   "sem5.desc2":"The conference also provided an opportunity to explore community-led environmental initiatives, particularly the work of <strong>Association Aïcha in Oumifiss</strong>, whose founder, Mr. Mustapha, is pursuing an ambitious initiative to plant <strong>one million trees</strong>. Exchanges with local stakeholders, including <strong>Dar Si Hmad in Sidi Ifni</strong>, highlighted the importance of grassroots environmental action and community participation.",
   "sem5.desc3":"This experience strengthened the connection between my academic research on environmental displacement and climate justice and practical approaches to environmental protection and climate adaptation.",
@@ -257,6 +265,14 @@ en:{
   "stop.17":"Environmental Displacement",
   "stop.18":"Youth Engagement",
   "stop.19":"Community Resilience",
+  "sem4.when":"June 2026",
+  "sem4.where":"Azilal & Khénifra",
+  "sem4.short":"Two training sessions on the international protection of children's rights, delivered to teachers in Azilal and school principals in Khénifra.",
+  "sem5.when":"October 2026",
+  "sem5.where":"Guelmim, Morocco",
+  "sem5.short":"Presented my research “Moroccan Youth in the Face of Desertification: Protecting Oases and Reducing Displacement” on a panel on climate resilience.",
+  "sem.more":"View details",
+  "sem.gallery.title":"Photo gallery",
   "cert.label":"Continuing Education","cert.title":"International <em>Certifications</em>",
   "cert1.title":"Asylum and Human Rights","cert1.meta":"Issued October 2025",
   "cert2.title":"UNHCR Best Interests Procedure — Refugee and Asylum-Seeking Children at Risk",
@@ -390,7 +406,7 @@ ar:{
   "stop.12":"الحماية بالوسط المدرسي","stop.13":"تكوين الأطر التربوية",
   "sem5.role":"متدخل في جلسة نقاش ومقدّم بحث",
   "sem5.title":"LCOY Morocco 2026 — المؤتمر المحلي للشباب حول التغير المناخي",
-  "sem5.org":"LCOY Morocco · كلميم، المغرب · أكتوبر 2026",
+  "sem5.org":"LCOY Morocco · كلميم، المغرب",
   "sem5.desc1":"المشاركة <strong>كمتدخل في جلسة نقاش</strong> ضمن مؤتمر LCOY Morocco 2026، وهو مؤتمر شبابي حول المناخ جمع باحثين ومدافعين عن البيئة وشباباً فاعلين في التغيير لمناقشة التحديات المناخية والتنمية المستدامة. وقدّمتُ بحثي المعنون <strong>«الشباب المغربي في مواجهة التصحر: حماية الواحات والحد من النزوح»</strong>، الذي يتناول الضغوط البيئية التي تتعرض لها المنظومات الواحية بالمغرب، والعلاقة بين التصحر ونزوح السكان، ودور الشباب في تعزيز الصمود المناخي على المستوى المحلي.",
   "sem5.desc2":"كما شكّل المؤتمر مناسبة للتعرف على مبادرات بيئية يقودها المجتمع المحلي، ولا سيما عمل <strong>جمعية عائشة بأومفيس</strong>، التي يقود مؤسسها السيد مصطفى مبادرة طموحة لغرس <strong>مليون شجرة</strong>. وأبرزت اللقاءات مع الفاعلين المحليين، ومن بينهم <strong>دار سي حماد بسيدي إفني</strong>، أهمية العمل البيئي القاعدي والمشاركة المجتمعية.",
   "sem5.desc3":"وقد عززت هذه التجربة الصلة بين أبحاثي الأكاديمية حول النزوح البيئي والعدالة المناخية، والمقاربات العملية لحماية البيئة والتكيف مع التغير المناخي.",
@@ -400,6 +416,14 @@ ar:{
   "stop.17":"النزوح البيئي",
   "stop.18":"إشراك الشباب",
   "stop.19":"الصمود المجتمعي",
+  "sem4.when":"يونيو 2026",
+  "sem4.where":"أزيلال وخنيفرة",
+  "sem4.short":"تأطير لقاءين تكوينيين حول الحماية الدولية لحقوق الطفل، لفائدة الأساتذة بأزيلال ومديري المؤسسات التعليمية بخنيفرة.",
+  "sem5.when":"أكتوبر 2026",
+  "sem5.where":"كلميم، المغرب",
+  "sem5.short":"تقديم بحثي «الشباب المغربي في مواجهة التصحر: حماية الواحات والحد من النزوح» ضمن جلسة نقاش حول الصمود المناخي.",
+  "sem.more":"عرض التفاصيل",
+  "sem.gallery.title":"معرض الصور",
   "cert.label":"التكوين المستمر","cert.title":"الشهادات <em>الدولية</em>",
   "cert1.title":"اللجوء وحقوق الإنسان","cert1.meta":"أُصدرت في أكتوبر 2025",
   "cert2.title":"إجراءات تقدير المصلحة الفضلى للأطفال اللاجئين وطالبي اللجوء في وضعيات الخطر — UNHCR",
@@ -612,6 +636,8 @@ document.querySelectorAll('.sem-cover').forEach(c=>{
       load(slides[cover.__i]);
       load(slides[(cover.__i + 1) % slides.length]);
       slides[cover.__i].classList.add('is-active');
+      const count = cover.querySelector('.sem-count');
+      if(count) count.textContent = (cover.__i + 1) + ' / ' + slides.length;
     };
     const restart = function(){
       clearInterval(cover.__timer);
@@ -634,3 +660,75 @@ function semNav(e, btn, dir){
   cover.__show(cover.__i + dir);
   cover.__restart();
 }
+
+// ── Featured conferences: full-resolution gallery + detail dialog ──
+(function(){
+  const gal = document.getElementById('semGallery');
+  const img = document.getElementById('semGalleryImg');
+  const count = document.getElementById('semGalleryCount');
+  const modal = document.getElementById('semModal');
+  if(!gal || !modal) return;
+  let list = [], idx = 0, lastFocus = null;
+  function lock(){ document.body.style.overflow = 'hidden'; }
+  function unlock(){ if(gal.hidden && modal.hidden) document.body.style.overflow = ''; }
+  function render(){
+    img.src = list[idx];
+    img.alt = '';
+    count.textContent = (idx + 1) + ' / ' + list.length;
+    const multi = list.length > 1;
+    gal.querySelectorAll('.sem-gallery-btn').forEach(b=> b.hidden = !multi);
+    // warm the neighbours so paging feels instant
+    [idx+1, idx-1].forEach(n=>{ const p = new Image(); p.src = list[(n + list.length) % list.length]; });
+  }
+  function open(srcs, start){
+    if(!srcs || !srcs.length) return;
+    lastFocus = document.activeElement;
+    list = srcs; idx = Math.max(0, Math.min(start||0, srcs.length-1));
+    gal.hidden = false; lock(); render();
+    gal.querySelector('.sem-gallery-close').focus();
+  }
+  window.openSemGallery = function(cover){
+    const srcs = [...cover.querySelectorAll('.sem-slide')].map(s=> s.getAttribute('src') || s.getAttribute('data-src'));
+    open(srcs, cover.__i || 0);
+  };
+  window.openSemGalleryAt = function(key, i){ open((window.SEM_GALLERIES||{})[key], i); };
+  window.semGalleryStep = function(d){ if(!list.length) return; idx = (idx + d + list.length) % list.length; render(); };
+  window.closeSemGallery = function(){
+    gal.hidden = true; img.src = ''; unlock();
+    if(lastFocus && document.contains(lastFocus)) lastFocus.focus();
+  };
+  let detailOpener = null;
+  window.openSemDetail = function(key){
+    detailOpener = document.activeElement;
+    modal.querySelectorAll('.sem-detail').forEach(d=>{
+      const on = d.getAttribute('data-detail') === key;
+      d.hidden = !on;
+      const t = d.querySelector('.sem-detail-title');
+      if(t) t.id = on ? 'semModalTitle' : '';
+    });
+    modal.hidden = false; lock();
+    const panel = modal.querySelector('.sem-modal-panel');
+    panel.scrollTop = 0; panel.focus();
+  };
+  window.closeSemDetail = function(){
+    modal.hidden = true; unlock();
+    if(detailOpener && document.contains(detailOpener)) detailOpener.focus();
+  };
+  document.addEventListener('keydown', function(e){
+    if(!gal.hidden){
+      if(e.key === 'Escape'){ e.preventDefault(); closeSemGallery(); }
+      else if(e.key === 'ArrowRight') semGalleryStep(document.documentElement.dir === 'rtl' ? -1 : 1);
+      else if(e.key === 'ArrowLeft') semGalleryStep(document.documentElement.dir === 'rtl' ? 1 : -1);
+      return;
+    }
+    if(!modal.hidden && e.key === 'Escape'){ e.preventDefault(); closeSemDetail(); }
+  });
+  // swipe on touch screens
+  let x0 = null;
+  gal.addEventListener('touchstart', e=>{ x0 = e.touches[0].clientX; }, {passive:true});
+  gal.addEventListener('touchend', e=>{
+    if(x0 === null) return;
+    const dx = e.changedTouches[0].clientX - x0; x0 = null;
+    if(Math.abs(dx) > 40) semGalleryStep(dx < 0 ? 1 : -1);
+  });
+})();

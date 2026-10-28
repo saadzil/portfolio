@@ -398,94 +398,91 @@
   <div class="sec">
     <p class="sec-label reveal" data-i18n="sem.label">Engagement académique</p>
     <h2 class="sec-title reveal" data-i18n-html="sem.title">Séminaires & <em>Conférences</em></h2>
-    <div class="sem-grid">
-      <!-- Conferences: two equal square cards side by side -->
-      <div class="sem-pair">
-        <!-- Protection internationale des droits de l'enfant (CRMEF) -->
-        <div class="sem-card sem-card-square reveal">
-          <div class="sem-square-media">
-            <div class="sem-cover sem-cover-square slideshow" role="button" tabindex="0" aria-label="Agrandir la photo" onclick="openCurrentSlide(this)">
-              <img class="sem-slide is-active" decoding="async" src="images/1.jpg" alt="Intervention — Azilal">
-              <img class="sem-slide sem-crop-top" decoding="async" data-src="images/2.jpg" alt="Affiche de l'atelier — CRMEF Khénifra">
-              <img class="sem-slide" decoding="async" data-src="images/3.jpg" alt="Attestation de reconnaissance — CRMEF Azilal">
-              <img class="sem-slide sem-crop-bottom" decoding="async" data-src="images/5.jpg" alt="Photo de groupe avec les participants">
-              <button type="button" class="sem-nav sem-nav-prev" onclick="semNav(event,this,-1)" aria-label="Photo précédente">
-                <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>
-              </button>
-              <button type="button" class="sem-nav sem-nav-next" onclick="semNav(event,this,1)" aria-label="Photo suivante">
-                <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg>
-              </button>
-              <span class="sem-cover-hint">
-                <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-                <span data-i18n="sem.gallery">Cliquer pour agrandir</span>
-              </span>
-            </div>
-          </div>
-          <div class="sem-card-body">
-            <span class="sem-role-badge" data-i18n="sem4.role">Formateur et intervenant</span>
-            <h3 class="sem-title" data-i18n="sem4.title">Protection internationale des droits de l'enfant</h3>
-            <p class="sem-org" data-i18n="sem4.org">CRMEF Béni Mellal–Khénifra · Azilal &amp; Khénifra</p>
-            <p class="sem-desc" data-i18n-html="sem4.desc">Animation de deux rencontres scientifiques et formatives consacrées à la <strong>protection internationale des droits de l'enfant</strong>, organisées par le Centre Régional des Métiers de l'Éducation et de la Formation de Béni Mellal–Khénifra, à Azilal et Khénifra. La rencontre d'Azilal était destinée aux <strong>enseignantes et enseignants</strong>, celle de Khénifra aux <strong>directrices et directeurs d'établissements scolaires</strong>. Les échanges ont porté sur la Convention relative aux droits de l'enfant, le principe de l'intérêt supérieur de l'enfant et le rôle de l'institution éducative dans la prévention, la protection et la promotion des droits de l'enfant en milieu scolaire.</p>
-            <div class="sem-topics">
-              <span class="sem-topic" data-i18n="stop.10">Droits de l'enfant</span>
-              <span class="sem-topic" data-i18n="stop.11">Intérêt supérieur de l'enfant</span>
-              <span class="sem-topic" data-i18n="stop.12">Protection en milieu scolaire</span>
-              <span class="sem-topic" data-i18n="stop.13">Formation des cadres éducatifs</span>
-            </div>
-          </div>
+    <!-- Featured conferences: two equal cards, square uncropped photos, details in a dialog -->
+    <div class="sem-featured">
+      <article class="sem-feat reveal">
+        <div class="sem-cover sem-feat-media slideshow" role="button" tabindex="0" aria-label="Voir les photos" onclick="openSemGallery(this)">
+            <img class="sem-slide is-active" decoding="async" src="images/1.jpg" alt="Intervention — Azilal">
+            <img class="sem-slide" decoding="async" data-src="images/2.jpg" alt="Affiche de l'atelier — CRMEF Khénifra">
+            <img class="sem-slide" decoding="async" data-src="images/3.jpg" alt="Attestation de reconnaissance — CRMEF Azilal">
+            <img class="sem-slide" decoding="async" data-src="images/5.jpg" alt="Photo de groupe avec les participants">
+            <button type="button" class="sem-nav sem-nav-prev" onclick="semNav(event,this,-1)" aria-label="Photo précédente"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>
+            <button type="button" class="sem-nav sem-nav-next" onclick="semNav(event,this,1)" aria-label="Photo suivante"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button>
+            <span class="sem-count" aria-hidden="true">1 / 4</span>
+            <span class="sem-expand" aria-hidden="true"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span>
         </div>
-        <!-- LCOY Morocco 2026 -->
-        <div class="sem-card sem-card-square reveal">
-          <div class="sem-square-media">
-            <div class="sem-cover sem-cover-square slideshow" data-keep-empty role="button" tabindex="0" aria-label="Agrandir la photo" onclick="openCurrentSlide(this)">
-              <span class="sem-cover-empty" aria-hidden="true"><svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></span>
-              <img class="sem-slide is-active" decoding="async" src="lcoy-1.jpg" alt="Saad Zilali, panéliste à LCOY Morocco 2026 — Guelmim">
-              <img class="sem-slide" decoding="async" data-src="lcoy-2.jpg" alt="Cérémonie de clôture — LCOY Morocco 2026">
-              <img class="sem-slide" decoding="async" data-src="lcoy-3.jpg" alt="Participants lors de la conférence LCOY Morocco 2026">
-              <img class="sem-slide" decoding="async" data-src="lcoy-4.jpg" alt="Logo de l'Association Aïcha — Oumifiss">
-              <img class="sem-slide" decoding="async" data-src="lcoy-5.jpg" alt="Intervention lors du panel — LCOY Morocco 2026">
-              <img class="sem-slide" decoding="async" data-src="lcoy-6.jpg" alt="Panel de discussion — LCOY Morocco 2026, Guelmim">
-              <img class="sem-slide" decoding="async" data-src="lcoy-7.jpg" alt="Photo de groupe des participants — LCOY Morocco 2026">
-              <img class="sem-slide" decoding="async" data-src="lcoy-8.jpg" alt="Kakémono de clôture — LCOY Morocco 2026">
-              <img class="sem-slide" decoding="async" data-src="lcoy-9.jpg" alt="Cueillette des olives — Oumifiss">
-              <img class="sem-slide" decoding="async" data-src="lcoy-10.jpg" alt="Cueillette des olives avec un membre de la communauté — Oumifiss">
-              <img class="sem-slide" decoding="async" data-src="lcoy-11.jpg" alt="Atelier de travail — LCOY Morocco 2026">
-              <img class="sem-slide" decoding="async" data-src="lcoy-12.jpg" alt="Dans l'auditorium — LCOY Morocco 2026">
-              <img class="sem-slide" decoding="async" data-src="lcoy-13.jpg" alt="Fresque de l'Association Aïcha — Oumifiss">
-              <img class="sem-slide" decoding="async" data-src="lcoy-14.jpg" alt="Échanges avec des participants — LCOY Morocco 2026">
-              <img class="sem-slide" decoding="async" data-src="lcoy-15.jpg" alt="Installation solaire et irrigation au goutte-à-goutte — Oumifiss">
-              <button type="button" class="sem-nav sem-nav-prev" onclick="semNav(event,this,-1)" aria-label="Photo précédente">
-                <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>
-              </button>
-              <button type="button" class="sem-nav sem-nav-next" onclick="semNav(event,this,1)" aria-label="Photo suivante">
-                <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg>
-              </button>
-              <span class="sem-cover-hint">
-                <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-                <span data-i18n="sem.gallery">Cliquer pour agrandir</span>
-              </span>
-            </div>
-          </div>
-          <div class="sem-card-body">
-          <span class="sem-role-badge" data-i18n="sem5.role">Panéliste et présentateur de recherche</span>
-          <h3 class="sem-title" data-i18n="sem5.title">LCOY Morocco 2026 — Conférence Locale de la Jeunesse sur le Changement Climatique</h3>
-          <p class="sem-org" data-i18n="sem5.org">LCOY Morocco · Guelmim, Maroc · Octobre 2026</p>
-          <p class="sem-desc" data-i18n-html="sem5.desc1">Participation en tant que <strong>panéliste</strong> à LCOY Morocco 2026, une conférence climatique de la jeunesse réunissant chercheurs, défenseurs de l'environnement et jeunes acteurs du changement autour des défis climatiques et du développement durable. Présentation de ma recherche intitulée <strong>« La jeunesse marocaine face à la désertification : protéger les oasis et réduire les déplacements »</strong>, qui examine les pressions environnementales pesant sur les écosystèmes oasiens du Maroc, le lien entre désertification et déplacement des populations, et le rôle des jeunes dans le renforcement de la résilience climatique locale.</p>
-          <p class="sem-desc" data-i18n-html="sem5.desc2">La conférence a également permis de découvrir des initiatives environnementales portées par les communautés, notamment le travail de l'<strong>Association Aïcha à Oumifiss</strong>, dont le fondateur, M. Mustapha, mène un projet ambitieux visant à planter <strong>un million d'arbres</strong>. Les échanges avec des acteurs locaux, dont <strong>Dar Si Hmad à Sidi Ifni</strong>, ont souligné l'importance de l'action environnementale de terrain et de la participation communautaire.</p>
-          <p class="sem-desc" data-i18n-html="sem5.desc3">Cette expérience a renforcé le lien entre mes recherches académiques sur les déplacements environnementaux et la justice climatique, et les approches concrètes de protection de l'environnement et d'adaptation au changement climatique.</p>
-          <div class="sem-topics">
-            <span class="sem-topic" data-i18n="stop.14">Justice climatique</span>
-            <span class="sem-topic" data-i18n="stop.15">Désertification</span>
-            <span class="sem-topic" data-i18n="stop.16">Préservation des oasis</span>
-            <span class="sem-topic" data-i18n="stop.17">Déplacements environnementaux</span>
-            <span class="sem-topic" data-i18n="stop.18">Engagement des jeunes</span>
-            <span class="sem-topic" data-i18n="stop.19">Résilience communautaire</span>
-          </div>
-          </div>
+        <div class="sem-feat-body">
+          <p class="sem-feat-role" data-i18n="sem4.role">Formateur et intervenant</p>
+          <h3 class="sem-feat-title" data-i18n="sem4.title">Protection internationale des droits de l'enfant</h3>
+          <p class="sem-feat-meta"><span data-i18n="sem4.when">Juin 2026</span><span class="sem-dot">·</span><span data-i18n="sem4.where">Azilal &amp; Khénifra</span></p>
+          <p class="sem-feat-short" data-i18n="sem4.short">Deux rencontres de formation sur la protection internationale des droits de l'enfant, animées pour les enseignants à Azilal et les directeurs d'établissements à Khénifra.</p>
+          <button type="button" class="sem-more" onclick="openSemDetail('crmef')"><span data-i18n="sem.more">Voir les détails</span><span class="sem-more-arrow" aria-hidden="true">→</span></button>
         </div>
+      </article>
+      <article class="sem-feat reveal">
+        <div class="sem-cover sem-feat-media slideshow" role="button" tabindex="0" aria-label="Voir les photos" onclick="openSemGallery(this)">
+            <img class="sem-slide is-active" decoding="async" src="lcoy-1.jpg" alt="Saad Zilali, panéliste à LCOY Morocco 2026 — Guelmim">
+            <img class="sem-slide" decoding="async" data-src="lcoy-2.jpg" alt="Cérémonie de clôture — LCOY Morocco 2026">
+            <img class="sem-slide" decoding="async" data-src="lcoy-3.jpg" alt="Participants lors de la conférence LCOY Morocco 2026">
+            <img class="sem-slide" decoding="async" data-src="lcoy-4.jpg" alt="Logo de l'Association Aïcha — Oumifiss">
+            <img class="sem-slide" decoding="async" data-src="lcoy-5.jpg" alt="Intervention lors du panel — LCOY Morocco 2026">
+            <img class="sem-slide" decoding="async" data-src="lcoy-6.jpg" alt="Panel de discussion — LCOY Morocco 2026, Guelmim">
+            <img class="sem-slide" decoding="async" data-src="lcoy-7.jpg" alt="Photo de groupe des participants — LCOY Morocco 2026">
+            <img class="sem-slide" decoding="async" data-src="lcoy-8.jpg" alt="Kakémono de clôture — LCOY Morocco 2026">
+            <img class="sem-slide" decoding="async" data-src="lcoy-9.jpg" alt="Cueillette des olives — Oumifiss">
+            <img class="sem-slide" decoding="async" data-src="lcoy-10.jpg" alt="Cueillette des olives avec un membre de la communauté — Oumifiss">
+            <img class="sem-slide" decoding="async" data-src="lcoy-11.jpg" alt="Atelier de travail — LCOY Morocco 2026">
+            <img class="sem-slide" decoding="async" data-src="lcoy-12.jpg" alt="Dans l'auditorium — LCOY Morocco 2026">
+            <img class="sem-slide" decoding="async" data-src="lcoy-13.jpg" alt="Fresque de l'Association Aïcha — Oumifiss">
+            <img class="sem-slide" decoding="async" data-src="lcoy-14.jpg" alt="Échanges avec des participants — LCOY Morocco 2026">
+            <img class="sem-slide" decoding="async" data-src="lcoy-15.jpg" alt="Installation solaire et irrigation au goutte-à-goutte — Oumifiss">
+            <button type="button" class="sem-nav sem-nav-prev" onclick="semNav(event,this,-1)" aria-label="Photo précédente"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>
+            <button type="button" class="sem-nav sem-nav-next" onclick="semNav(event,this,1)" aria-label="Photo suivante"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button>
+            <span class="sem-count" aria-hidden="true">1 / 15</span>
+            <span class="sem-expand" aria-hidden="true"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span>
+        </div>
+        <div class="sem-feat-body">
+          <p class="sem-feat-role" data-i18n="sem5.role">Panéliste et présentateur de recherche</p>
+          <h3 class="sem-feat-title" data-i18n="sem5.title">LCOY Morocco 2026 — Conférence Locale de la Jeunesse sur le Changement Climatique</h3>
+          <p class="sem-feat-meta"><span data-i18n="sem5.when">Octobre 2026</span><span class="sem-dot">·</span><span data-i18n="sem5.where">Guelmim, Maroc</span></p>
+          <p class="sem-feat-short" data-i18n="sem5.short">Présentation de ma recherche « La jeunesse marocaine face à la désertification : protéger les oasis et réduire les déplacements » lors d'un panel sur la résilience climatique.</p>
+          <button type="button" class="sem-more" onclick="openSemDetail('lcoy')"><span data-i18n="sem.more">Voir les détails</span><span class="sem-more-arrow" aria-hidden="true">→</span></button>
+        </div>
+      </article>
+    </div>
+    <!-- Conference details (opened by "Voir les détails") -->
+    <div class="sem-modal" id="semModal" hidden onclick="if(event.target===this)closeSemDetail()">
+      <div class="sem-modal-panel" role="dialog" aria-modal="true" aria-labelledby="semModalTitle" tabindex="-1">
+        <button type="button" class="sem-modal-close" onclick="closeSemDetail()" aria-label="Fermer">×</button>
+      <section class="sem-detail" data-detail="crmef" hidden>
+        <p class="sem-feat-role" data-i18n="sem4.role">Formateur et intervenant</p>
+        <h3 class="sem-detail-title" data-i18n="sem4.title">Protection internationale des droits de l'enfant</h3>
+        <p class="sem-feat-meta"><span data-i18n="sem4.when">Juin 2026</span><span class="sem-dot">·</span><span data-i18n="sem4.org">CRMEF Béni Mellal–Khénifra · Azilal &amp; Khénifra</span></p>
+        <div class="sem-detail-text">
+          <p class="sem-detail-desc" data-i18n-html="sem4.desc">Animation de deux rencontres scientifiques et formatives consacrées à la <strong>protection internationale des droits de l'enfant</strong>, organisées par le Centre Régional des Métiers de l'Éducation et de la Formation de Béni Mellal–Khénifra, à Azilal et Khénifra. La rencontre d'Azilal était destinée aux <strong>enseignantes et enseignants</strong>, celle de Khénifra aux <strong>directrices et directeurs d'établissements scolaires</strong>. Les échanges ont porté sur la Convention relative aux droits de l'enfant, le principe de l'intérêt supérieur de l'enfant et le rôle de l'institution éducative dans la prévention, la protection et la promotion des droits de l'enfant en milieu scolaire.</p>
+        </div>
+        <div class="sem-topics"><span class="sem-topic" data-i18n="stop.10">Droits de l'enfant</span><span class="sem-topic" data-i18n="stop.11">Intérêt supérieur de l'enfant</span><span class="sem-topic" data-i18n="stop.12">Protection en milieu scolaire</span><span class="sem-topic" data-i18n="stop.13">Formation des cadres éducatifs</span></div>
+        <p class="sem-detail-label"><span data-i18n="sem.gallery.title">Galerie photos</span> · 4</p>
+        <div class="sem-thumbs"><button type="button" class="sem-thumb" onclick="openSemGalleryAt('crmef',0)"><img src="images/1.jpg" alt="Intervention — Azilal" loading="lazy" decoding="async"></button><button type="button" class="sem-thumb" onclick="openSemGalleryAt('crmef',1)"><img src="images/2.jpg" alt="Affiche de l'atelier — CRMEF Khénifra" loading="lazy" decoding="async"></button><button type="button" class="sem-thumb" onclick="openSemGalleryAt('crmef',2)"><img src="images/3.jpg" alt="Attestation de reconnaissance — CRMEF Azilal" loading="lazy" decoding="async"></button><button type="button" class="sem-thumb" onclick="openSemGalleryAt('crmef',3)"><img src="images/5.jpg" alt="Photo de groupe avec les participants" loading="lazy" decoding="async"></button></div>
+      </section>
+      <section class="sem-detail" data-detail="lcoy" hidden>
+        <p class="sem-feat-role" data-i18n="sem5.role">Panéliste et présentateur de recherche</p>
+        <h3 class="sem-detail-title" data-i18n="sem5.title">LCOY Morocco 2026 — Conférence Locale de la Jeunesse sur le Changement Climatique</h3>
+        <p class="sem-feat-meta"><span data-i18n="sem5.when">Octobre 2026</span><span class="sem-dot">·</span><span data-i18n="sem5.org">LCOY Morocco · Guelmim, Maroc</span></p>
+        <div class="sem-detail-text">
+          <p class="sem-detail-desc" data-i18n-html="sem5.desc1">Participation en tant que <strong>panéliste</strong> à LCOY Morocco 2026, une conférence climatique de la jeunesse réunissant chercheurs, défenseurs de l'environnement et jeunes acteurs du changement autour des défis climatiques et du développement durable. Présentation de ma recherche intitulée <strong>« La jeunesse marocaine face à la désertification : protéger les oasis et réduire les déplacements »</strong>, qui examine les pressions environnementales pesant sur les écosystèmes oasiens du Maroc, le lien entre désertification et déplacement des populations, et le rôle des jeunes dans le renforcement de la résilience climatique locale.</p>
+          <p class="sem-detail-desc" data-i18n-html="sem5.desc2">La conférence a également permis de découvrir des initiatives environnementales portées par les communautés, notamment le travail de l'<strong>Association Aïcha à Oumifiss</strong>, dont le fondateur, M. Mustapha, mène un projet ambitieux visant à planter <strong>un million d'arbres</strong>. Les échanges avec des acteurs locaux, dont <strong>Dar Si Hmad à Sidi Ifni</strong>, ont souligné l'importance de l'action environnementale de terrain et de la participation communautaire.</p>
+          <p class="sem-detail-desc" data-i18n-html="sem5.desc3">Cette expérience a renforcé le lien entre mes recherches académiques sur les déplacements environnementaux et la justice climatique, et les approches concrètes de protection de l'environnement et d'adaptation au changement climatique.</p>
+        </div>
+        <div class="sem-topics"><span class="sem-topic" data-i18n="stop.14">Justice climatique</span><span class="sem-topic" data-i18n="stop.15">Désertification</span><span class="sem-topic" data-i18n="stop.16">Préservation des oasis</span><span class="sem-topic" data-i18n="stop.17">Déplacements environnementaux</span><span class="sem-topic" data-i18n="stop.18">Engagement des jeunes</span><span class="sem-topic" data-i18n="stop.19">Résilience communautaire</span></div>
+        <p class="sem-detail-label"><span data-i18n="sem.gallery.title">Galerie photos</span> · 15</p>
+        <div class="sem-thumbs"><button type="button" class="sem-thumb" onclick="openSemGalleryAt('lcoy',0)"><img src="lcoy-1.jpg" alt="Saad Zilali, panéliste à LCOY Morocco 2026 — Guelmim" loading="lazy" decoding="async"></button><button type="button" class="sem-thumb" onclick="openSemGalleryAt('lcoy',1)"><img src="lcoy-2.jpg" alt="Cérémonie de clôture — LCOY Morocco 2026" loading="lazy" decoding="async"></button><button type="button" class="sem-thumb" onclick="openSemGalleryAt('lcoy',2)"><img src="lcoy-3.jpg" alt="Participants lors de la conférence LCOY Morocco 2026" loading="lazy" decoding="async"></button><button type="button" class="sem-thumb" onclick="openSemGalleryAt('lcoy',3)"><img src="lcoy-4.jpg" alt="Logo de l'Association Aïcha — Oumifiss" loading="lazy" decoding="async"></button><button type="button" class="sem-thumb" onclick="openSemGalleryAt('lcoy',4)"><img src="lcoy-5.jpg" alt="Intervention lors du panel — LCOY Morocco 2026" loading="lazy" decoding="async"></button><button type="button" class="sem-thumb" onclick="openSemGalleryAt('lcoy',5)"><img src="lcoy-6.jpg" alt="Panel de discussion — LCOY Morocco 2026, Guelmim" loading="lazy" decoding="async"></button><button type="button" class="sem-thumb" onclick="openSemGalleryAt('lcoy',6)"><img src="lcoy-7.jpg" alt="Photo de groupe des participants — LCOY Morocco 2026" loading="lazy" decoding="async"></button><button type="button" class="sem-thumb" onclick="openSemGalleryAt('lcoy',7)"><img src="lcoy-8.jpg" alt="Kakémono de clôture — LCOY Morocco 2026" loading="lazy" decoding="async"></button><button type="button" class="sem-thumb" onclick="openSemGalleryAt('lcoy',8)"><img src="lcoy-9.jpg" alt="Cueillette des olives — Oumifiss" loading="lazy" decoding="async"></button><button type="button" class="sem-thumb" onclick="openSemGalleryAt('lcoy',9)"><img src="lcoy-10.jpg" alt="Cueillette des olives avec un membre de la communauté — Oumifiss" loading="lazy" decoding="async"></button><button type="button" class="sem-thumb" onclick="openSemGalleryAt('lcoy',10)"><img src="lcoy-11.jpg" alt="Atelier de travail — LCOY Morocco 2026" loading="lazy" decoding="async"></button><button type="button" class="sem-thumb" onclick="openSemGalleryAt('lcoy',11)"><img src="lcoy-12.jpg" alt="Dans l'auditorium — LCOY Morocco 2026" loading="lazy" decoding="async"></button><button type="button" class="sem-thumb" onclick="openSemGalleryAt('lcoy',12)"><img src="lcoy-13.jpg" alt="Fresque de l'Association Aïcha — Oumifiss" loading="lazy" decoding="async"></button><button type="button" class="sem-thumb" onclick="openSemGalleryAt('lcoy',13)"><img src="lcoy-14.jpg" alt="Échanges avec des participants — LCOY Morocco 2026" loading="lazy" decoding="async"></button><button type="button" class="sem-thumb" onclick="openSemGalleryAt('lcoy',14)"><img src="lcoy-15.jpg" alt="Installation solaire et irrigation au goutte-à-goutte — Oumifiss" loading="lazy" decoding="async"></button></div>
+      </section>
       </div>
+    </div>
+    <div class="sem-grid sem-minor">
       <div class="sem-card sem-card-photo reveal">
-        <div class="sem-cover sem-cover-single" role="button" tabindex="0" onclick="openCertLightbox('images/photo-seminar.jpg')">
+        <div class="sem-cover sem-cover-single sem-minor-media" role="button" tabindex="0" onclick="openCertLightbox('images/photo-seminar.jpg')">
           <img src="images/photo-seminar.jpg" alt="Séminaire sur les Droits de l'Homme et la Démocratie — Université Abdelmalek Essaâdi, Tanger">
           <span class="sem-cover-hint">
             <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg>
@@ -504,7 +501,9 @@
           </div>
         </div>
       </div>
-      <div class="sem-card reveal">
+      <div class="sem-card sem-card-photo reveal">
+        <div class="sem-minor-media sem-minor-empty" aria-hidden="true"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10l9-6 9 6"/><path d="M5 10v8M9.5 10v8M14.5 10v8M19 10v8M3 21h18"/></svg></div>
+        <div class="sem-card-body">
         <span class="sem-role-badge" data-i18n="sem2.role">Membre du Comité Organisateur</span>
         <h3 class="sem-title" data-i18n="sem2.title">Séminaire sur la Coexistence Universitaire et les Droits de l'Homme</h3>
         <p class="sem-org" data-i18n="sem.org">Université Abdelmalek Essaâdi · Tanger</p>
@@ -514,8 +513,11 @@
           <span class="sem-topic" data-i18n="stop.5">Tolérance</span>
           <span class="sem-topic" data-i18n="stop.6">Dialogue</span>
         </div>
+        </div>
       </div>
-      <div class="sem-card reveal">
+      <div class="sem-card sem-card-photo reveal">
+        <div class="sem-minor-media sem-minor-empty" aria-hidden="true"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10l9-6 9 6"/><path d="M5 10v8M9.5 10v8M14.5 10v8M19 10v8M3 21h18"/></svg></div>
+        <div class="sem-card-body">
         <span class="sem-role-badge" data-i18n="sem3.role">Membre du Comité</span>
         <h3 class="sem-title" data-i18n="sem3.title">Comité pour la Promotion et la Défense des Droits de l'Homme</h3>
         <p class="sem-org" data-i18n="sem.org">Université Abdelmalek Essaâdi · Tanger</p>
@@ -524,6 +526,7 @@
           <span class="sem-topic" data-i18n="stop.7">DIH</span>
           <span class="sem-topic" data-i18n="stop.8">Plaidoyer</span>
           <span class="sem-topic" data-i18n="stop.9">Accès à la justice</span>
+        </div>
         </div>
       </div>
     </div>
@@ -735,6 +738,15 @@
 </footer>
 
 <!-- Certificate lightbox -->
+<!-- Conference photo gallery -->
+<div id="semGallery" class="sem-gallery" hidden onclick="if(event.target===this||event.target.classList.contains('sem-gallery-stage'))closeSemGallery()">
+  <div class="sem-gallery-stage"><img id="semGalleryImg" src="" alt=""></div>
+  <button type="button" class="sem-gallery-btn sem-gallery-prev" onclick="semGalleryStep(-1)" aria-label="Photo précédente"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>
+  <button type="button" class="sem-gallery-btn sem-gallery-next" onclick="semGalleryStep(1)" aria-label="Photo suivante"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button>
+  <span class="sem-gallery-count" id="semGalleryCount"></span>
+  <button type="button" class="sem-gallery-close" onclick="closeSemGallery()" aria-label="Fermer">×</button>
+</div>
+<script>window.SEM_GALLERIES={"crmef": ["images/1.jpg", "images/2.jpg", "images/3.jpg", "images/5.jpg"], "lcoy": ["lcoy-1.jpg", "lcoy-2.jpg", "lcoy-3.jpg", "lcoy-4.jpg", "lcoy-5.jpg", "lcoy-6.jpg", "lcoy-7.jpg", "lcoy-8.jpg", "lcoy-9.jpg", "lcoy-10.jpg", "lcoy-11.jpg", "lcoy-12.jpg", "lcoy-13.jpg", "lcoy-14.jpg", "lcoy-15.jpg"]};</script>
 <div id="certLightbox" class="cert-lightbox" onclick="closeCertLightbox()">
   <img id="certLightboxImg" src="" alt="Certificat">
   <button class="cert-lightbox-close" onclick="closeCertLightbox()" aria-label="Fermer">×</button>
