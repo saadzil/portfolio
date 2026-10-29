@@ -720,3 +720,10 @@ html[lang="en"] .edu-mob-official{display:none}
 @media(max-width:760px){
   .sem-date-tile.has-img{height:240px}
 }
+/* Antwerp date image: fill the whole panel edge to edge (cover), text area kept in frame */
+.sem-date-tile.has-img{padding:0;background:none;overflow:hidden}
+.sem-date-tile.has-img .sem-date-img{position:absolute;inset:0;width:100%;height:100%;margin:0;object-fit:cover;object-position:center}
+@media(max-width:760px){
+  .sem-date-tile.has-img{height:auto;aspect-ratio:5/4}
+  .sem-date-tile.has-img .sem-date-img{object-position:50% 78%}
+}
