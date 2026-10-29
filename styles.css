@@ -682,3 +682,32 @@ footer strong{color:var(--gold);font-weight:400}
   .exp-mobility-facts{padding:1.2rem 0 0;border-inline-start:0;border-top:1px solid var(--cream-dark)}
 }
 .sem-upcoming-sub:empty{display:none}
+/* ════ PhD → international doctoral mobility (nested sub-entry) ════ */
+.edu-mobility{position:relative;margin-top:1.9rem;padding:0.2rem 0 0.2rem 1.7rem;border-inline-start:1px solid var(--gold);max-width:44rem}
+.edu-mobility::before{content:'';position:absolute;top:0.35rem;inset-inline-start:-5px;width:9px;height:9px;border-radius:50%;background:var(--white);border:1px solid var(--gold)}
+.edu-mob-kicker{font-family:var(--mono);font-size:0.6rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:0.8rem}
+.edu-mob-head{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:0.9rem;align-items:start;margin-bottom:1rem}
+.edu-mob-icon{width:38px;height:38px;display:flex;align-items:center;justify-content:center;border:1px solid var(--cream-dark);border-radius:50%;background:var(--cream);color:var(--teal)}
+.edu-mob-role{font-family:var(--serif);font-size:1.12rem;font-weight:400;line-height:1.3;color:var(--ink)}
+.edu-mob-official{font-size:0.74rem;color:var(--gray-light);margin-top:0.1rem}
+html[lang="en"] .edu-mob-official{display:none}
+.edu-mob-uni{font-size:0.84rem;color:var(--gray-text);margin-top:0.2rem}
+.edu-mob-facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0.9rem 1.6rem;margin:0 0 1rem;padding:0.95rem 0;border-top:1px solid var(--cream-dark);border-bottom:1px solid var(--cream-dark)}
+.edu-mob-facts dt{font-family:var(--mono);font-size:0.58rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-light);margin-bottom:0.25rem}
+.edu-mob-facts dd{margin:0;font-size:0.86rem;line-height:1.5;color:var(--ink)}
+.edu-mob-link{display:inline-flex;align-items:center;gap:0.35rem;color:var(--teal);text-decoration:none;border-bottom:1px solid rgba(26,107,90,0.3);transition:border-color 0.2s,color 0.2s}
+.edu-mob-link:hover{color:var(--teal-light);border-bottom-color:var(--teal-light)}
+.edu-mob-link:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.edu-mob-label{font-family:var(--mono);font-size:0.58rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-light);margin-bottom:0.35rem}
+.edu-mob-focus{font-size:0.88rem;line-height:1.7;color:var(--gray-text)}
+.edu-mob-note{margin-top:0.8rem;font-size:0.76rem;font-style:italic;color:var(--gray-light)}
+[dir="rtl"] .edu-mob-note{font-style:normal}
+[dir="rtl"] .edu-mobility{padding:0.2rem 1.7rem 0.2rem 0}
+@media(max-width:760px){
+  .edu-mobility{padding-inline-start:1.2rem;margin-top:1.5rem}
+  [dir="rtl"] .edu-mobility{padding:0.2rem 1.2rem 0.2rem 0}
+  .edu-mob-head{grid-template-columns:auto minmax(0,1fr)}
+  .edu-mob-head .book-status{grid-column:1/-1;justify-self:start}
+  .edu-mob-facts{grid-template-columns:1fr}
+}
