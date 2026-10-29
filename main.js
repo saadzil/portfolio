@@ -983,6 +983,9 @@ window.toggleAuthor = function(btn){
   const open = btn.getAttribute('aria-expanded') !== 'true';
   btn.setAttribute('aria-expanded', open ? 'true' : 'false');
   panel.hidden = !open;
+  // Upcoming seminar card: mirror the open/closed state so the date panel can swap to its tall image
+  const card = btn.closest('.sem-upcoming');
+  if(card) card.classList.toggle('is-open', open);
 };
 // Emails are assembled here rather than written in the page, to keep them away from spam harvesters
 document.querySelectorAll('.book-author-email').forEach(a=>{
