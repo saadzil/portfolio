@@ -598,3 +598,17 @@ footer strong{color:var(--gold);font-weight:400}
   .book-author-list{grid-template-columns:1fr;gap:0.9rem}
   .book-author-list li{padding:0;border:0}
 }
+/* Co-authors: name opens position + email */
+.book-author-name{font-size:0.95rem;font-weight:500;color:var(--ink)}
+.book-author-toggle{align-self:flex-start;display:inline-flex;align-items:center;gap:0.45rem;padding:0 0 0.15rem;border:0;border-bottom:1px dashed var(--cream-dark);background:none;font:inherit;cursor:pointer;text-align:start;transition:border-color 0.2s}
+.book-author-toggle:hover,.book-author-toggle[aria-expanded="true"]{border-bottom-color:var(--gold)}
+.book-author-toggle:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.book-author-chev{color:var(--gold);flex:none;transition:transform 0.2s}
+.book-author-toggle[aria-expanded="true"] .book-author-chev{transform:rotate(180deg)}
+.book-author-info{display:flex;flex-direction:column;gap:0.45rem;margin-top:0.55rem;animation:bookAuthorIn 0.2s ease}
+.book-author-info[hidden]{display:none}
+@keyframes bookAuthorIn{from{opacity:0;transform:translateY(-3px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.book-author-info{animation:none}}
+.book-author-email{display:inline-flex;flex-wrap:wrap;gap:0.35rem;font-size:0.78rem;color:var(--teal);text-decoration:none;word-break:break-all}
+.book-author-email:hover .book-author-email-addr{text-decoration:underline}
+.book-author-email-label{font-family:var(--mono);font-size:0.58rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-light);align-self:center}

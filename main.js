@@ -73,6 +73,7 @@ fr:{
   "book1.a2":"Saida Achahboun",
   "book1.a3":"Abdeslam Ansri",
   "book1.a2.role":"Ambassadrice du développement durable à travers le monde, experte en droits de l'Homme et en questions migratoires.",
+  "book.email":"E-mail",
   "book1.a3.role":"Professeur de l'enseignement supérieur, Faculté des Sciences Juridiques et Politiques, Université Abdelmalek Essaâdi – Tanger, Maroc.",
   "book1.desc":"Ouvrage consacré au cadre juridique international applicable à l'écocide. Il analyse les insuffisances des mécanismes de protection actuels face aux atteintes graves à l'environnement et défend la reconnaissance de l'écocide comme crime international, par un amendement au Statut de Rome de la Cour pénale internationale.",
   "book.details":"Éditeur, date de parution et ISBN : communiqués lors de la publication.",
@@ -242,6 +243,7 @@ en:{
   "book1.a2":"Saida Achahboun",
   "book1.a3":"Abdeslam Ansri",
   "book1.a2.role":"Ambassador for Sustainable Development worldwide; expert in human rights and migration issues.",
+  "book.email":"Email",
   "book1.a3.role":"Professor of Higher Education, Faculty of Legal and Political Sciences, Abdelmalek Essaâdi University – Tangier, Morocco.",
   "book1.desc":"A book examining the international legal framework governing ecocide. It analyses the shortcomings of current protection mechanisms in the face of severe environmental harm and argues for recognising ecocide as an international crime through an amendment to the Rome Statute of the International Criminal Court.",
   "book.details":"Publisher, release date and ISBN: to be announced on publication.",
@@ -411,6 +413,7 @@ ar:{
   "book1.a2":"سعيدة أشهبون",
   "book1.a3":"عبد السلام العنصري",
   "book1.a2.role":"سفيرة التنمية المستدامة حول العالم، خبيرة في مجال حقوق الإنسان وقضايا الهجرة.",
+  "book.email":"البريد الإلكتروني",
   "book1.a3.role":"أستاذ التعليم العالي، كلية العلوم القانونية والسياسية، جامعة عبد المالك السعدي – طنجة، المغرب.",
   "book1.desc":"كتاب يتناول الإطار القانوني الدولي المنظِّم للإبادة البيئية، ويحلل أوجه قصور آليات الحماية الحالية في مواجهة الأضرار البيئية الجسيمة، ويدعو إلى الاعتراف بالإبادة البيئية جريمةً دولية من خلال تعديل نظام روما الأساسي للمحكمة الجنائية الدولية.",
   "book.details":"دار النشر وتاريخ الصدور ورقم ISBN: يُعلن عنها عند النشر.",
@@ -786,3 +789,19 @@ function semNav(e, btn, dir){
     if(Math.abs(dx) > 40) semGalleryStep(dx < 0 ? 1 : -1);
   });
 })();
+
+// ── Book co-authors: show position and email on click ──
+window.toggleAuthor = function(btn){
+  const panel = document.getElementById(btn.getAttribute('aria-controls'));
+  if(!panel) return;
+  const open = btn.getAttribute('aria-expanded') !== 'true';
+  btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  panel.hidden = !open;
+};
+// Emails are assembled here rather than written in the page, to keep them away from spam harvesters
+document.querySelectorAll('.book-author-email').forEach(a=>{
+  const addr = a.getAttribute('data-u') + '@' + a.getAttribute('data-d');
+  a.href = 'mailto:' + addr;
+  const t = a.querySelector('.book-author-email-addr');
+  if(t) t.textContent = addr;
+});
