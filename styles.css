@@ -739,3 +739,5 @@ html[lang="en"] .edu-mob-official{display:none}
   .sem-date-tile.has-tall .sem-date-img-tall{display:none}
   .sem-upcoming.is-open .sem-date-tile.has-tall .sem-date-img{opacity:1;pointer-events:auto}
 }
+/* Performance: the top bar is ~opaque, so drop the costly blur behind it */
+#topnav{-webkit-backdrop-filter:none;backdrop-filter:none}

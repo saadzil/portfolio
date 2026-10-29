@@ -765,22 +765,18 @@ burger.addEventListener('click', ()=> navLinks.classList.toggle('open'));
 document.querySelectorAll('.nav-links a').forEach(a=> a.addEventListener('click', ()=> navLinks.classList.remove('open')));
 
 // Scrolled nav
-window.addEventListener('scroll',()=> document.getElementById('topnav').classList.toggle('scrolled', window.scrollY > 60));
+const topnav = document.getElementById('topnav');
+window.addEventListener('scroll',()=> topnav.classList.toggle('scrolled', window.scrollY > 60), {passive:true});
 
-// Active nav
-const sections = document.querySelectorAll('section[id],[id]');
+// Active nav — one observer, only for the sections the menu links to
 const navAs = document.querySelectorAll('.nav-links a');
-new IntersectionObserver((entries)=>{
+const navTargets = [...navAs].map(a=> document.getElementById((a.getAttribute('href')||'').slice(1))).filter(Boolean);
+const navObs = new IntersectionObserver((entries)=>{
   entries.forEach(e=>{
     if(e.isIntersecting) navAs.forEach(a=> a.classList.toggle('active', a.getAttribute('href')==='#'+e.target.id));
   });
-},{threshold:0.3,rootMargin:'-56px 0px 0px 0px'}).observe && sections.forEach(s=>{
-  new IntersectionObserver((entries)=>{
-    entries.forEach(e=>{
-      if(e.isIntersecting) navAs.forEach(a=> a.classList.toggle('active', a.getAttribute('href')==='#'+e.target.id));
-    });
-  },{threshold:0.25,rootMargin:'-56px 0px 0px 0px'}).observe(s);
-});
+},{threshold:0.25,rootMargin:'-56px 0px 0px 0px'});
+navTargets.forEach(t=> navObs.observe(t));
 
 // Reveal
 const revealObs = new IntersectionObserver((entries)=>{
