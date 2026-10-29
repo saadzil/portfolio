@@ -884,14 +884,27 @@ document.querySelectorAll('.sem-cover').forEach(c=>{
     };
     const restart = function(){
       clearInterval(cover.__timer);
-      if(still) return;
+      if(still || !cover.__visible) return;
       cover.__timer = setInterval(()=> show(cover.__i + 1), STEP);
     };
     cover.__i = 0;
     cover.__show = show;
     cover.__restart = restart;
-    show(0);
-    restart();
+    // Performance: only auto-advance (and fetch the next photo) while the slideshow is on screen
+    if('IntersectionObserver' in window){
+      cover.__visible = false;
+      new IntersectionObserver(entries=>{
+        entries.forEach(en=>{
+          cover.__visible = en.isIntersecting;
+          if(en.isIntersecting){ if(!cover.__started){ cover.__started = true; show(cover.__i); } restart(); }
+          else clearInterval(cover.__timer);
+        });
+      }, {rootMargin:'200px 0px'}).observe(cover);
+    } else {
+      cover.__visible = true;
+      show(0);
+      restart();
+    }
   });
 })();
 
