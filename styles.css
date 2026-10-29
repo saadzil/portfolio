@@ -729,7 +729,7 @@ html[lang="en"] .edu-mob-official{display:none}
 }
 /* Antwerp date panel: square image when collapsed, vertical image when "Voir les détails" is open (desktop/tablet) */
 .sem-date-img-tall{display:none}
-.sem-date-tile.has-img .sem-date-img,.sem-date-tile.has-tall .sem-date-img-tall{transition:opacity 0.45s ease}
+.sem-date-tile.has-img .sem-date-img,.sem-date-tile.has-tall .sem-date-img-tall{transition:opacity 0.12s ease-out}
 .sem-date-tile.has-tall .sem-date-img-tall{display:block;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:42% 50%;opacity:0;pointer-events:none;cursor:zoom-in}
 .sem-upcoming.is-open .sem-date-tile.has-tall .sem-date-img-tall{opacity:1;pointer-events:auto}
 .sem-upcoming.is-open .sem-date-tile.has-tall .sem-date-img{opacity:0;pointer-events:none}
