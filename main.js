@@ -959,6 +959,8 @@ function semNav(e, btn, dir){
     modal.querySelectorAll('.sem-detail').forEach(d=>{
       const on = d.getAttribute('data-detail') === key;
       d.hidden = !on;
+      // Performance: fetch this conference's thumbnails only when its details are opened
+      if(on) d.querySelectorAll('img[data-src]').forEach(i=>{ i.src = i.getAttribute('data-src'); i.removeAttribute('data-src'); });
       const t = d.querySelector('.sem-detail-title');
       if(t) t.id = on ? 'semModalTitle' : '';
     });
