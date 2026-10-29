@@ -586,3 +586,15 @@ footer strong{color:var(--gold);font-weight:400}
   .book-author-list{flex-direction:column;gap:0.25rem}
   .book-author-list li{padding:0;border:0}
 }
+/* Co-authors with their positions */
+.book-authors{display:block;padding:1.1rem 0 1.2rem}
+.book-authors-label{display:block;margin-bottom:0.75rem}
+.book-author-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem 0}
+.book-author-list li{display:flex;flex-direction:column;gap:0.3rem;padding:0 1.4rem;border-inline-start:1px solid var(--cream-dark)}
+.book-author-list li:first-child{padding-inline-start:0;border-inline-start:0}
+.book-author-name{font-size:0.95rem;font-weight:500;color:var(--ink)}
+.book-author-role{font-size:0.78rem;line-height:1.55;color:var(--gray-text)}
+@media(max-width:760px){
+  .book-author-list{grid-template-columns:1fr;gap:0.9rem}
+  .book-author-list li{padding:0;border:0}
+}
