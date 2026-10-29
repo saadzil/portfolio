@@ -638,3 +638,47 @@ footer strong{color:var(--gold);font-weight:400}
   .pubf-authors li{padding:0;border:0}
   .pubf-title-ar{font-size:1.05rem}
 }
+/* ════ Upcoming seminar (date tile instead of a photograph) ════ */
+.sem-upcoming{position:relative;display:grid;grid-template-columns:190px minmax(0,1fr);background:var(--white);border:1px solid var(--cream-dark);border-radius:3px;overflow:hidden;margin-bottom:0.4rem;transition:box-shadow 0.25s}
+.sem-upcoming:hover{box-shadow:0 8px 34px rgba(10,22,40,0.07)}
+.sem-upcoming::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--teal),var(--gold));z-index:2}
+.sem-date-tile{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.1rem;padding:2rem 1rem;background:var(--cream);border-inline-end:1px solid var(--cream-dark);text-align:center}
+.sem-date-day{font-family:var(--serif);font-size:3.4rem;line-height:1;color:var(--ink)}
+.sem-date-month{font-family:var(--mono);font-size:0.72rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-top:0.35rem}
+[lang="ar"] .sem-date-month{letter-spacing:0;font-family:var(--sans-ar);font-size:0.9rem}
+.sem-date-year{font-family:var(--mono);font-size:0.7rem;letter-spacing:0.14em;color:var(--gray-light)}
+.sem-date-time{margin-top:0.9rem;padding-top:0.7rem;border-top:1px solid var(--cream-dark);font-family:var(--mono);font-size:0.66rem;letter-spacing:0.08em;color:var(--gray-text);direction:ltr}
+.sem-upcoming-body{display:flex;flex-direction:column;padding:1.8rem 2rem 1.7rem}
+.sem-upcoming-body .pubf-head{margin-bottom:0.75rem}
+.sem-upcoming-body .sem-feat-role{margin-bottom:0}
+.sem-upcoming-sub{font-size:0.84rem;color:var(--gray-text);margin:-0.25rem 0 0.6rem}
+.sem-upcoming-body .sem-feat-short{-webkit-line-clamp:2;margin-bottom:0.9rem}
+.sem-upcoming-body .pub-desc{margin-bottom:1rem}
+.sem-facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem 1.6rem;margin:0 0 1rem;padding:1rem 0;border-top:1px solid var(--cream-dark);border-bottom:1px solid var(--cream-dark)}
+.sem-facts dt,.exp-mobility-facts dt{font-family:var(--mono);font-size:0.58rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-light);margin-bottom:0.3rem}
+.sem-facts dd,.exp-mobility-facts dd{margin:0;font-size:0.84rem;line-height:1.55;color:var(--ink)}
+.sem-upcoming + .pub-group{margin-top:2.6rem}
+#seminars .pub-group:first-of-type{margin-top:0}
+
+/* ════ International research mobility card ════ */
+.exp-mobility{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:2.2rem;margin-bottom:0.4rem}
+.exp-mobility:hover{transform:none}
+.exp-mobility .exp-meta{align-items:center}
+.exp-mobility-desc{font-size:0.88rem;line-height:1.72;color:var(--gray-text);margin-bottom:1.1rem}
+.exp-mobility-facts{display:flex;flex-direction:column;gap:1.05rem;margin:0;padding-inline-start:2rem;border-inline-start:1px solid var(--cream-dark)}
+.exp-mobility-loc dt{color:var(--gold)}
+.exp-mobility-note{font-size:0.78rem;font-style:italic;color:var(--gray-text)}
+[dir="rtl"] .exp-mobility-note{font-style:normal}
+.exp-mobility + .pub-group{margin-top:2.6rem}
+@media(max-width:760px){
+  .sem-upcoming{grid-template-columns:1fr}
+  .sem-date-tile{flex-direction:row;flex-wrap:wrap;gap:0.5rem 0.7rem;padding:1.1rem 1.3rem;border-inline-end:0;border-bottom:1px solid var(--cream-dark);justify-content:flex-start;align-items:baseline}
+  .sem-date-day{font-size:2.1rem}
+  .sem-date-month{margin-top:0}
+  .sem-date-time{margin:0;padding:0;border:0;margin-inline-start:auto}
+  .sem-upcoming-body{padding:1.4rem 1.3rem}
+  .sem-facts{grid-template-columns:1fr}
+  .exp-mobility{grid-template-columns:1fr;gap:1.4rem}
+  .exp-mobility-facts{padding:1.2rem 0 0;border-inline-start:0;border-top:1px solid var(--cream-dark)}
+}
+.sem-upcoming-sub:empty{display:none}
