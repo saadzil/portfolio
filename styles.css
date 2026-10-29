@@ -711,3 +711,12 @@ html[lang="en"] .edu-mob-official{display:none}
   .edu-mob-head .book-status{grid-column:1/-1;justify-self:start}
   .edu-mob-facts{grid-template-columns:1fr}
 }
+/* Upcoming seminar: University of Antwerp date image fills the existing date panel (same size, no cropping) */
+.sem-date-tile{position:relative}
+.sem-date-img{display:none}
+.sem-date-tile.has-img{padding:0;background:#f4ece1;cursor:zoom-in}
+.sem-date-tile.has-img .sem-date-img{display:block;position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:center}
+.sem-date-tile.has-img > span{visibility:hidden}
+@media(max-width:760px){
+  .sem-date-tile.has-img{height:240px}
+}

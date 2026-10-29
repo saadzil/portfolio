@@ -6,7 +6,7 @@
 <title>Zilali Saad — Doctorant en Droit | Human Rights & Environmental Refugees</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@300;400&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=20261029d">
+<link rel="stylesheet" href="styles.css?v=20261029e">
 </head>
 <body>
 
@@ -527,11 +527,13 @@
     <!-- ── Upcoming (confirmed by the University of Antwerp; no photographs until it has taken place) ── -->
     <h3 class="pub-group reveal" data-i18n="semg.upcoming">À venir</h3>
     <article class="sem-upcoming reveal" id="seminar-antwerp">
-      <div class="sem-date-tile" aria-hidden="true">
-        <span class="sem-date-day">13</span>
-        <span class="sem-date-month" data-i18n="ua.sem.month">Nov.</span>
-        <span class="sem-date-year">2026</span>
-        <span class="sem-date-time">12:00–13:30</span>
+      <div class="sem-date-tile" id="ua-date-tile">
+        <!-- University of Antwerp date image (antwerp-seminar.png, original 1254×1254). Until the file exists, the text date below is shown instead. -->
+        <img class="sem-date-img" src="antwerp-seminar.png" alt="13 Nov 2026 · 12:00–13:30 · University of Antwerp" decoding="async" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()" onclick="openCertLightbox(this.getAttribute('src'))">
+        <span class="sem-date-day" aria-hidden="true">13</span>
+        <span aria-hidden="true" class="sem-date-month" data-i18n="ua.sem.month">Nov.</span>
+        <span aria-hidden="true" class="sem-date-year">2026</span>
+        <span aria-hidden="true" class="sem-date-time">12:00–13:30</span>
       </div>
       <div class="sem-upcoming-body">
         <div class="pubf-head">
@@ -910,6 +912,6 @@
   <button class="cert-lightbox-close" onclick="closeCertLightbox()" aria-label="Fermer">×</button>
 </div>
 
-<script src="main.js?v=20261029d"></script>
+<script src="main.js?v=20261029e"></script>
 </body>
 </html>
