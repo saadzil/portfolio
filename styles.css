@@ -736,6 +736,7 @@ p.pub-journal{display:flex;flex-wrap:wrap;align-items:baseline;gap:0.3rem 1.5rem
 .pub-journal-name{font-family:var(--sans-ar);font-size:0.9rem;color:var(--gray-text)}
 .pub-clickable .pub-status{margin-inline-end:0.9rem}
 #article-tindouf .pubf-authors{margin:0.5rem 0 0.7rem}
+.pub-link + .pub-more{margin-inline-start:1rem}
 .pub6-abstract p{font-size:0.9rem;line-height:1.8;color:var(--gray-text);margin-bottom:0.9rem;text-align:justify;hyphens:auto}
 .pub6-abstract p:last-child{margin-bottom:0}
 .pub6-details .pub6-keywords{margin-top:0.2rem}
