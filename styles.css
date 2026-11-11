@@ -744,8 +744,13 @@ html[lang="en"] .edu-mob-official{display:none}
 /* ════ Published article 06 (Tindouf) — same card as other publications + details panel ════ */
 .pub-clickable{cursor:pointer}
 .pub-clickable .pub-more,.pub-clickable a{cursor:pointer}
-.pub-journal{font-size:0.8rem;color:var(--gray-light);margin-bottom:0.2rem}
-.pub-journal-name{font-family:var(--sans-ar);font-size:0.9rem;color:var(--gray-text);unicode-bidi:isolate}
+.pub-journal{font-size:0.8rem;color:var(--gray-light);margin-bottom:0.2rem;text-align:right}
+.pub-journal-name{display:block}
+.pub-journal-meta{display:block;direction:ltr;text-align:right;white-space:nowrap}
+[dir="rtl"] .pub-journal-meta{direction:rtl}
+.pub6-meta dd.pub-journal{color:var(--gray-text)}
+[dir="ltr"] .pub6-meta-journal dt,html:not([dir="rtl"]) .pub6-meta-journal dt{text-align:right}
+.pub-journal-name{font-family:var(--sans-ar);font-size:0.9rem;color:var(--gray-text)}
 .pub-clickable .pub-status{margin-inline-end:0.9rem}
 #article-tindouf .pubf-authors{margin:0.5rem 0 0.7rem}
 .pub6-meta{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0.9rem 1.6rem;margin:1.1rem 0 0;padding:0.9rem 0;border-top:1px solid var(--cream-dark);border-bottom:1px solid var(--cream-dark)}
