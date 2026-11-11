@@ -185,22 +185,7 @@ body{font-family:var(--sans);background:var(--cream);color:var(--ink);line-heigh
 .edu-phd-box .title-ar{font-size:0.84rem;color:var(--teal-light);direction:rtl;font-family:var(--sans-ar);text-align:right}
 .edu-tags{display:flex;flex-wrap:wrap;gap:0.4rem;margin-top:0.9rem}
 .edu-tag{font-size:0.66rem;letter-spacing:0.06em;text-transform:uppercase;background:rgba(26,107,90,0.08);color:var(--teal);padding:0.28rem 0.65rem;border-radius:2px;border:1px solid rgba(26,107,90,0.15)}
-/* Fix: RTL education — use single column, year+type shown inline on top */
-[dir="rtl"] .edu-item{
-  grid-template-columns:1fr;
-  gap:0.6rem;
-  direction:rtl;
-}
-[dir="rtl"] .edu-year-col{
-  display:flex;
-  flex-direction:row;
-  align-items:center;
-  gap:0.8rem;
-  padding-bottom:0.5rem;
-  border-bottom:1px solid var(--cream-dark);
-}
-[dir="rtl"] .edu-year{display:inline;margin-bottom:0}
-[dir="rtl"] .edu-type{display:inline}
+[dir="rtl"] .edu-phd-box .title-ar{display:none}
 
 /* ── EXPERIENCE ── */
 .exp-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
@@ -258,8 +243,8 @@ body{font-family:var(--sans);background:var(--cream);color:var(--ink);line-heigh
 .pub-pages{display:inline-block;margin-top:0.6rem;margin-left:0.6rem;font-family:var(--mono);font-size:0.63rem;letter-spacing:0.08em;opacity:0.55}
 .pub-link{display:inline-block;margin-top:0.6rem;margin-left:0.6rem;font-family:var(--mono);font-size:0.63rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--teal);text-decoration:none;transition:color 0.2s}
 .pub-link:hover{color:var(--teal-light)}
-[dir="rtl"] .pub-item{grid-template-columns:1fr;direction:rtl}
-[dir="rtl"] .pub-num{display:none}
+[dir="rtl"] .pub-item{direction:rtl}
+[dir="rtl"] .pub-pages,[dir="rtl"] .pub-link{margin-left:0;margin-right:0.6rem}
 [dir="rtl"] .pub-title,[dir="rtl"] .pub-title-ar,[dir="rtl"] .pub-desc,[dir="rtl"] .pub-type{text-align:right}
 
 /* ── SEMINARS ── */
