@@ -745,8 +745,7 @@ html[lang="en"] .edu-mob-official{display:none}
 .pub-clickable{cursor:pointer}
 .pub-clickable .pub-more,.pub-clickable a{cursor:pointer}
 .pub-journal{font-size:0.8rem;color:var(--gray-light);margin-bottom:0.2rem;text-align:right}
-.pub-journal-name{display:block}
-.pub-journal-meta{display:block;direction:ltr;text-align:right;white-space:nowrap}
+.pub-journal-meta{display:inline-block;direction:ltr;white-space:nowrap}
 [dir="rtl"] .pub-journal-meta{direction:rtl}
 .pub-journal-name{font-family:var(--sans-ar);font-size:0.9rem;color:var(--gray-text)}
 .pub-clickable .pub-status{margin-inline-end:0.9rem}
