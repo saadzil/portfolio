@@ -741,3 +741,6 @@ p.pub-journal{display:flex;flex-wrap:wrap;align-items:baseline;gap:0.3rem 1.5rem
 .pub6-abstract p:last-child{margin-bottom:0}
 .pub6-details .pub6-keywords{margin-top:0.2rem}
 [dir="rtl"] .pub6-abstract p{text-align:justify;line-height:1.95;hyphens:manual}
+.sem-upcoming-actions{margin-top:auto;display:flex;flex-wrap:wrap;align-items:center;gap:0.6rem 1.6rem}
+.sem-upcoming-actions .sem-more{margin-top:0}
+.sem-event-link{font-size:0.82rem}
